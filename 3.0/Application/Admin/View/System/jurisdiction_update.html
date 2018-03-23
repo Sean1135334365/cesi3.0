@@ -1,0 +1,116 @@
+<include file="Public:header" />
+
+<style>
+  label{
+    display:inline;
+  }
+</style>
+
+
+<form action="<{:U('System/jurisdiction_update')}>" method="post">
+  <input type="hidden" name="id" value="<{$id}>" />
+  <input type="hidden" name="inou" value="<{$inou}>" />
+
+  <table class="table table-bordered table-hover definewidth m10">
+    <thead>
+    <tr>
+      <th class="tab_wit4">权限名称</th>
+      <!--<th>目录类别</th>-->
+      <th class="tab_wit4">一级目录</th>
+      <!--<th>部门</th>-->
+      <th>二级目录</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="tab_middle" rowspan="<{$cont}>" align="center" class="" valign="middle"><input type="text" name="name" value="<{$rank}>" id="username" required="" placeholder="权限名称 / RankName"></td>
+    </tr>
+    <volist name="data" id="vo">
+      <tr>
+        <td class="tab_center">
+          <label for="<{$vo.id}>">
+            <input type="checkbox" data-am-ucheck name="c_id[]" id="<{$vo.id}>" value="<{$vo.id}>" <if condition="$vo.already eq 1 ">checked</if> /><{$vo.menu}>
+          </label>
+        </td>
+        <td class="tableleft">
+          <volist name="vo.next" id="vol">
+            <label for="<{$vol.id}>">
+              <input type="checkbox" data-am-ucheck name="cs_id[<{$vo.id}>][]" value="<{$vol.id}>" id="<{$vol.id}>" superior="<{$vol.superior}>" <if condition="$vol.already eq 1 ">checked</if>/><{$vol.menu}>
+            </label>&nbsp;&nbsp;
+          </volist>
+        </td>
+
+      </tr>
+    </volist>
+    <tr>
+      <td colspan="3">
+        <button type="submit" class="btn btn-primary">保存修改</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+<script>
+
+  $(function(){
+//
+//    $('#backid').click(function(){
+//      javascript:history.go(-1);
+//    });
+
+    $('input[type="checkbox"]').click(function () {
+      this.blur();
+      this.focus();
+    });
+    $("form input[type='checkbox']").change(function() {
+      if($(this).attr('superior') != '' && $(this).attr('superior') != undefined){
+        var superior = $(this).attr('superior');
+        if($(this).is(':checked')) {
+          $("input[superior='" + superior + "']").each(function () {
+            if ($(this).is(':checked')) {
+              $('#' + superior).prop('checked',true);
+            }else{
+              $('#' + superior).prop('checked',false);
+              return false;
+            }
+          });
+        }else{
+          $('#' + superior).prop('checked',false);
+        }
+      }else{
+        var id = $(this).attr('id');
+        if($(this).is(':checked')){
+          $("input[superior='" + id + "']").prop('checked',true);
+        }else{
+          $("input[superior='" + id + "']").prop('checked',false);
+        }
+      }
+    });
+
+    var inou=sessionStorage.getItem('inou');
+      console.log(inou);
+  });
+
+
+
+</script>
+
+
+
+
+
+
+
+<include file="Public:footer" />

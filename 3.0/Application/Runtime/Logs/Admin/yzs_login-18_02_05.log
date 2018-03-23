@@ -1,0 +1,312 @@
+[ 2018-02-05T11:26:01+08:00 ] 127.0.0.1 /index.php/Admin/User/wechat_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012999s ]
+
+[ 2018-02-05T11:26:01+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006637s ]
+
+[ 2018-02-05T11:26:25+08:00 ] 127.0.0.1 /index.php/Admin/Login/check_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000235s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0328s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `yzs_admin_users` SET `enter_time`='1517801185',`enter_ip`='127.0.0.1' WHERE ( id=1 ) [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0241s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Login','check_code','1','张中','','{\"username\":\"admin\",\"password\":\"admin123\"}','1517801185') [ RunTime:0.0052s ]
+
+[ 2018-02-05T11:26:26+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0112s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1517801186') [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0097s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-02-05T11:26:27+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1517801187') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0166s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0186s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000350s ]
+
+[ 2018-02-05T11:26:48+08:00 ] 127.0.0.1 /index.php/Admin/Shitu/shitu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0088s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Shitu','shitu','1','张中','','','1517801208') [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2018-02-05T11:31:38+08:00 ] 127.0.0.1 /index.php/Admin/Shitu/shitu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0150s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Shitu','shitu','1','张中','','','1517801498') [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-02-05T11:31:40+08:00 ] 127.0.0.1 /index.php/Admin/Shitu/shitu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0074s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Shitu','shitu','1','张中','','','1517801500') [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-02-05T14:00:23+08:00 ] 127.0.0.1 /index.php/Admin/User/wechat_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\www\3.0\index.php:13) H:\www\3.0\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0131s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('User','wechat_list','1','张中','','','1517810423') [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Admin\Controller\UserController.class.php 第 189 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\UserController.class.php 第 190 行.
+SQL: SHOW COLUMNS FROM `yzs_wxusers` [ RunTime:0.0231s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_wxusers` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_wxusers` WHERE ( 1 ) ORDER BY is_auth desc, channel_number desc, w_time desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: wxfollow H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 120 行.
+NOTIC: [8] Undefined index: access_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: refresh_token H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\3f21fe2b634004bc598a2ff229ee67b8.php 第 140 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\www\3.0\index.php:13) H:\www\3.0\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\www\3.0\index.php:13) H:\www\3.0\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\www\3.0\index.php:13) H:\www\3.0\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+

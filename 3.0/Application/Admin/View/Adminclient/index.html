@@ -1,0 +1,90 @@
+<include file="Public:header" />
+
+
+<form class="form-inline definewidth m20" action="" method="get">
+  菜单名称：
+  <input type="text" name="menuname" id="menuname"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+  <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+</form>
+
+<table class="table table-bordered table-hover definewidth m10">
+  <tr>
+    <th>ID</th>
+    <th>操作员</th>
+    <th>类别</th>
+    <th>金额</th>
+    <th>期限</th>
+    <th>贷款人</th>
+    <th>身份证号码</th>
+    <th>综合费用</th>
+    <th>公证日期</th>
+    <th>出借人</th>
+    <th>权利人数量</th>
+    <th>户口</th>
+    <th>备房</th>
+    <th>图片</th>
+    <th>发布时间</th>
+    <th>授权</th>
+    <th>状态</th>
+    <th width="50">操作</th>
+
+  </tr>
+
+  <volist name="list" id="vo">
+    <tr>
+      <!--<td class="center"><input type="checkbox" name="delete" /></td>-->
+      <td><{$vo.id}></td>
+      <td><{$vo.realname}></td>
+      <td><{$vo.id}><?php echo $row['f_unit_flag']?></td>
+      <td><{$vo.id}><?php echo $row["loan_amount"]?> 元</td>
+      <td><{$vo.id}><?php echo $row["loan_timelimit"]?> 个月</td>
+      <td><{$vo.id}><?php echo empty($more_row[0]["p_power_name"])?'':$more_row[0]["p_power_name"];?></td>
+      <td><{$vo.id}><?php echo empty($more_row[0]["p_power_cardno"])?'':$more_row[0]["p_power_cardno"];?></td>
+      <td><{$vo.id}><?php echo $row["r_sumcosts"]*100?>%</td>
+      <td><{$vo.id}><?php echo $row["f_notar_time"]?></td>
+      <td><{$vo.id}><?php echo $row["f_client_name"]?></td>
+      <td><{$vo.id}><?php echo $row["p_power_num"]?></td>
+      <td><{$vo.id}><?php echo $row["p_room_flag"]==1?"有":"无"?></td>
+      <td><{$vo.id}><?php echo $row["p_spareroom_flag"]==1?"有":"无"?></td>
+      <td><{$vo.id}><?php echo $row['loanpic_flag']?'<b><a href="javascript:uploadpicsframe('.$row['id'].')">上传</a><br /><a href="javascript:picframe('.$row['id'].')">查看</a><br /><a href="./popup-downpics-'.$row['id'].'.htm">下载</a></b>':'<b><a href="javascript:uploadpicsframe('.$row['id'].')">上传</a></b>'?></td>
+      <td><{$vo.id}><?php echo date('Y-m-d H:i:s', $row['create_date'])?></td>
+      <td>
+
+        <select name="selauth" id="selauth">
+          <option value="0">请选择</option>
+          <?php
+                      $userauth = user__find(array('gid'=>4));
+          foreach($userauth as $ua) {
+
+          ?>
+          <option value="<?php echo $ua['uid']?>" <?php echo $row['auth_uid']==$ua['uid']?'selected="selected"':'' ?>><?php echo $ua['username']?></option>
+          <?php }?>
+        </select></td>
+      <td><select name="select" id="isflag">
+        <option value="0">请选择</option>
+        <option value="1" <?php echo $row['isflag']==1?'selected="selected"':'' ?>>已受理</option>
+        <option value="3" <?php echo $row['isflag']==3?'selected="selected"':'' ?>>未通过</option>
+        <option value="2" <?php echo $row['isflag']==2?'selected="selected"':'' ?>>审核通过</option>
+        <option value="6" <?php echo $row['isflag']==6?'selected="selected"':'' ?>>待放款</option>
+        <option value="4" <?php echo $row['isflag']==4?'selected="selected"':'' ?>>完成放款</option>
+        <option value="5" <?php echo $row['isflag']==5?'selected="selected"':'' ?>>结清</option>
+      </select></td>
+      <td><a href="adminclient-update-<?php echo $row['id'];?>.htm">编辑</a><br />
+        <a class="j_copyrecord" href="javascript:;">复制</a><br />
+        <?php
+                        echo !$row['isproject']?'<a class="j_process_project" href="javascript:;">配对</a>':'';
+        ?>
+      </td>
+      <td>
+        <a href="<{:U('System/admin_grouping',array('id'=>$vo['id']))}>">修改</a> <span style="font-size:16px;">|</span>
+        <a href="<{:U('System/delete_admin',array('id'=>$vo['id']))}>" onclick="return menu_delete('<{$vo.delete}>','<{$vo.menu}>')">删除</a>
+      </td>
+    </tr>
+  </volist>
+
+</table>
+
+
+
+
+<include file="Public:footer" />

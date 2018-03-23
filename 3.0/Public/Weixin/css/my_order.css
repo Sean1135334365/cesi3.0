@@ -1,0 +1,106 @@
+body{
+    background-color: #f3f3f3;
+    padding-top: 1rem;
+}
+header{
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+header ul{
+    height: 1rem;
+    background-color: #fff;
+}
+header ul li{
+    width: 20%;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    font-size: 0.26rem;
+    float: left;
+    height: 100%;
+    line-height: 1rem;
+    text-align: center;
+}
+header ul li:first-child{
+    color: #cdaf7d;
+    border-color: #dfc190;
+}
+.contairner{
+    background-color: #f3f3f3;
+    display: none;
+    margin-top: 1px;
+}
+.note{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    text-align: center;
+}
+.note svg{
+    height: 1.28rem;
+    width: 1.37rem;
+}
+.note p{
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+.orders{
+    padding:0 0.34rem;
+    background-color: #fff;
+    margin-top: 0.2rem;
+}
+.orders>.order_top{
+    height: 1.2rem;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding: 0 0.34rem;
+    transform: translateX(-0.34rem);
+    background-color: #fafafa;
+}
+.orders>.order_top>img{
+    width: 0.4rem;
+    height: 0.4rem;
+    float: left;
+    margin: 0.4rem 0.2rem 0 0;
+}
+.orders>.order_top>p{
+    height: 100%;
+    font-size: 0.28rem;
+    color: #666;
+    float: left;
+    line-height: 1.2rem;
+    font-weight: 700;
+}
+.orders>.order_top>p:last-child{
+    color: #999;
+    float: right;
+    font-weight: 400;
+}
+.order_content{
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+    background-color: #fff;
+}
+.order_content>ul{
+    font-size: 0.28rem;
+    line-height: 0.6rem;
+    position: relative;
+    height: 0.6rem;
+}
+.order_content>ul>li{
+    float: left;
+    color: #999;
+}
+.order_content>ul>li:last-child{
+    text-align: right;
+    color: #666;
+    float: right;
+}

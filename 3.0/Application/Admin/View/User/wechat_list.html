@@ -1,0 +1,188 @@
+<include file="Public:header" />
+<form class="form-inline definewidth m20" action="<{:U('User/wechat_list')}>" method="post" style="Float:left;margin: 0px 0px 10px 0px;padding-left: 30px">
+  <input type="text" name="name" id="name" class="abc input-default" placeholder="昵称/微信号/签约号" value="">&nbsp;&nbsp;
+  <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
+  <!--<button type="button" class="btn btn-success" id="addnew">新增用户</button>-->
+</form>
+<form action="<{:U('User/wechat_list')}>" method="post" id="type" style="Float:right;margin: 20px 0px 0px 0px;">
+    <span style="position:absolute;right:2%;">
+      <select name="" typ="type" val="<{$page_number['type']}>" style="width: 70%; min-width: 80px;" id="sgin_123">
+          <option value="0" <if condition="$page_number['type'] eq 0 ">selected="selected"</if> >全&#12288;部</option>
+          <option value="1" <if condition="$page_number['type'] eq 1 ">selected="selected"</if> >签&#12288;约</option>
+          <option value="2" <if condition="$page_number['type'] eq 2 ">selected="selected"</if> >非签约</option>
+      </select>
+<!--      <input id="sign_up_all" type="radio" checked="checked" name="1" value="2" />全部订单
+      <input id="sign_up" type="radio" name="1" value="1" />签约订单
+      <input id="signing" type="radio" name="1" value="0" />非签约订单-->
+    </span>
+</form>
+<script>
+    $(function(){
+        $("#sgin_123").on('change',function(){
+//            var url = "<{:U('User/wechat_list')}>";
+            var url = $('#type').attr('action');
+
+            var split = url.split('/');
+            var sp_le = split.length - 1;
+            var act = split[sp_le].split('.');
+            var type_val = $(this).val();
+            var src = '';
+            for(var i = 0;i<=sp_le;i++){
+                if(i===sp_le){
+                    src += "/"+ act[0] + "/type/" + type_val + ".html";
+                }else{
+                    if(split[i] != ''){
+                        src += '/'+split[i];
+                    }
+                }
+            }
+//            console.log(src);
+//            console.log(split);
+//            console.log(split.length);
+            $('#type').attr("action",src);
+            $('#type').submit();
+        })
+    })
+</script>
+<div id="wechat_sign_up">
+<table class="table table-bordered table-hover tab_center definewidth m10" id="stype_1" >
+  <tr>
+    <th>编号</th>
+    <!--<th>openid</th>-->
+    <th>用户微信号</th>
+    <th>昵称</th>
+    <th>备注</th>
+    <th>头像</th>
+    <th>性别</th>
+    <th>城市</th>
+    <!--<th>是否关注微信</th>-->
+    <!--<th>access_token</th>-->
+    <!--<th>refresh_token</th>-->
+    <th>创建时间</th>
+    <th>创建时IP</th>
+    <th>签约号</th>
+    <th>授权签约</th>
+    <th>操作</th>
+  </tr>
+
+  <volist name="list" id="vo">
+    <tr>
+      <td><{$i}></td>
+      <!--<td class="omit"><{$vo.openid}></td>-->
+      <td><{$vo.wx_number}></td>
+      <td><{$vo.nickname}></td>
+      <td><{$vo.remarks}></td>
+      <td><img src="<{$vo.headimgurl}>" style="width:25px;"></td>
+      <td>
+        <if condition="$vo['sex'] eq '1'">
+          男
+          <else/>
+          女
+        </if>
+      </td>
+      <td>
+        <if condition="$vo['province'] neq ''">
+            <{$vo.province}>
+            <if condition="$vo['city'] neq ''">
+              ><{$vo.city}>
+            </if>
+          <else/>
+            <{$vo.city}>
+        </if>
+      </td>
+      <!--<td><{$vo.wxfollow}></td>-->
+      <!--<td><{$vo.access_token}></td>-->
+      <!--<td><{$vo.refresh_token}></td>-->
+      <td><{$vo.w_time|date="Y/m/d H:i:s",###}></td>
+      <td><{$vo.create_ip}></td>
+      <td><{$vo.channel_number}></td>
+      <td>
+           <if condition="$vo['is_auth'] eq '1'">
+               <font color="#62c462">已授权</font>
+               <else/>
+               <font color="#FF0000">未授权</font>
+           </if>
+      </td>
+      <td>
+        <a href="<{:U('User/wechat_update',array('id'=>$vo['id']))}>">修改</a> <!--<span style="font-size:16px;">|</span>-->
+          &nbsp;&nbsp;
+          <span class="authorise">
+              <if condition="$vo['state'] eq '1'">
+                  <a href="javascript:;" value="2" >恢复</a>
+                  <else/>
+                  <a href="javascript:;" value="1" >拉黑</a>
+              </if>
+          </span>
+          <input type="hidden" value="<{$vo.id}>"/>
+        <!--<a href="<{:U('System/wechat_update',array('id'=>$vo['id']))}>" onclick="return menu_delete('<{$vo.delete}>','<{$vo.menu}>')">删除</a>-->
+      </td>
+    </tr>
+  </volist>
+</table>
+    <div class="inline page"><!-- pull-right-->
+        <a href="<if condition="$page_number['page'] eq 1 ">javascript:;<else /><{:U('User/wechat_list',array('page'=>$page_number['page']-1,'type'=>$page_number['type']))}></if>">«</a>
+        <if condition="($page_number['count'] gt 10) AND ($page_number['page'] gt 5) ">
+            <a href="javascript:;">...</a>
+        </if>
+        <for start="1" end="$page_number['count']" comparison="elt">
+
+            <if condition="($i gt $page_number['page'] - 5) AND (($i lt $page_number['page'] + 5) OR (($page_number['page'] elt 5) AND ($i elt 10)))">
+                <if condition="$i eq $page_number['page'] ">
+                    <a href="javascript:;" class="current"><{$i}></a>
+                    <else />
+                    <a href="<{:U('User/wechat_list',array('page'=>$i,'type'=>$page_number['type']))}>"><{$i}></a>
+                    <!--<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>-->
+                </if>
+                <else />
+            </if>
+
+        </for>
+        <if condition="($page_number['count'] gt 10) AND ($page_number['page'] elt $page_number['count'] - 5) ">
+            <a href="javascript:;">...</a>
+        </if>
+        <a href="<if condition="$page_number['page'] eq $page_number['count'] ">javascript:;<else /><{:U('User/wechat_list',array('page'=>$page_number['page']+1,'type'=>$page_number['type']))}></if>">»</a>
+
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $('.authorise').click(function(){
+            var authorise = $(this).children().attr('value');
+            var id = $(this).next().val();
+//            alert(authorise);
+//            alert(id);
+            $.post("<{:U('Admin/User/channel_desc')}>",{authorise:authorise,id:id},function(code){
+                if(code.status === 1) {
+                    alert('修改成功!')
+                    location.reload();
+                } else {
+                    alert('修改失败')
+                }
+            },'json')
+        })
+        })
+
+
+//        $('.authorise').click(function(){
+//            var authorise = $(this).children().attr('value');
+//            var id = $(this).next().val();
+////            alert(authorise);
+////            alert(id);
+//            $.post("<{:U('Admin/User/channel_no')}>",{authorise:authorise,id:id},function(code){
+//                if(code.status === 1) {
+//                    alert('修改成功!')
+//                    location.reload();
+//                } else {
+//                    alert('修改失败')
+//                }
+//            },'json')
+//        })
+</script>
+
+
+
+
+
+<include file="Public:footer" />
+

@@ -1,0 +1,68 @@
+<include file="Public:header" />
+
+<form action="<{:U('User/addition_admin')}>" method="post" class="definewidth m20">
+  <table class="table table-bordered table-hover ">
+    <tr>
+      <td width="10%" class="tableleft">用户名</td>
+      <td><input type="text" name="username" value="<{$user.username}>"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">昵称</td>
+      <td ><input type="text" name="nickname" value="<{$user.nickname}>"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">姓名</td>
+      <td ><input type="text" name="name" value="<{$user.name}>"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">密码</td>
+      <td ><input type="text" name="password" value="<{$user.password}>"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">手机号码</td>
+      <td ><input type="text" name="mobile" value="<{$user.mobile}>"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">邮箱</td>
+      <td ><input type="text" name="mail" value="<{$user.mail}>"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">年龄</td>
+      <td ><input type="text" name="age" value="<{$user.age}>"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">性别</td>
+      <td >
+        <input type="radio" name="gender" value="1" <if condition="$user.gender eq 1 ">checked</if> /> 男
+        <input type="radio" name="gender" value="2" <if condition="$user.gender eq 2 ">checked</if> /> 女
+        <input type="radio" name="gender" value="0" <if condition="$user.gender eq 0 ">checked</if> /> 保密
+      </td>
+    </tr>
+
+    <tr>
+      <td class="tableleft">身份</td>
+      <td >
+        <input type="radio" name="rank" value="1" <if condition="$user.rank eq 1 ">checked</if> /> 超级管理员
+        <input type="radio" name="rank" value="2" <if condition="$user.rank eq 2 ">checked</if> /> 管理员
+        <input type="radio" name="rank" value="0" <if condition="$user.rank eq 0 ">checked</if> /> 普通用户
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft"></td>
+      <td>
+        <button type="submit" class="btn btn-primary">保存修改</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+      </td>
+    </tr>
+  </table>
+</form>
+<script>
+  $(function () {
+    $('#backid').click(function(){
+      javascript:history.go(-1);
+    });
+
+  });
+</script>
+
+
+<include file="Public:footer" />

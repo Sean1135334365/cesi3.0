@@ -1,0 +1,102 @@
+<include file="Public:header" />
+
+<form class="form-inline definewidth m20" action="<{:U('System/index')}>" method="post">
+  <input type="text" name="menu" id="menuname" class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+  <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew" founder="<{$_SESSION['yzs_userinfo']['founder']}>">新增菜单</button>
+</form>
+<table class="table table-bordered table-hover definewidth m10">
+  <thead>
+  <tr>
+    <th>目录名称</th>
+    <th>目录类别</th>
+    <th>目录级别</th>
+    <th>所属目录</th>
+    <th>ACTION</th>
+    <th>目录状态</th>
+    <th>管理操作</th>
+  </tr>
+  </thead>
+  <volist name="data" id="vo">
+    <tr>
+      <td><{$vo.menu}></td>
+      <td>
+        <if condition="$vo.sort eq 1 ">系统</if>
+        <if condition="$vo.sort eq 2 ">业务</if>
+      </td>
+      <td><{$vo.tier}></td>
+      <td><{$vo.superior}></td>
+      <td><{$vo.act}></td>
+      <td>
+        <if condition="$vo.state eq '1' ">启用</if>
+        <if condition="$vo.state eq '0' ">禁用</if>
+      </td>
+      <td>
+          <a href="<{:U('System/catalogue',array('id'=>$vo['id']))}>">编辑</a> <span style="font-size:16px;">|</span>
+          <if condition="$_SESSION['yzs_userinfo']['founder'] eq 0">
+              <a href="<{:U('System/delete_menu',array('id'=>$vo['id']))}>" onclick="return menu_delete('<{$vo.delete}>','<{$vo.menu}>')">删除</a>
+          <else/>
+              <a href="javascript:;" class="founder">删除</a>
+          </if>
+      </td>
+    </tr>
+
+  </volist>
+
+</table>
+
+
+<div class="inline page c_width70"><!-- pull-right-->
+  <a href="<if condition="$page_number['page'] eq 1 ">javascript:;<else /><{:U('System/index',array('page'=>$page_number['page']-1))}></if>">«</a>
+  <if condition="($page_number['count'] gt 10) AND ($page_number['page'] gt 5) ">
+    <a href="javascript:;">...</a>
+  </if>
+  <for start="1" end="$page_number['count']" comparison="elt">
+
+    <if condition="($i gt $page_number['page'] - 5) AND (($i lt $page_number['page'] + 5) OR (($page_number['page'] elt 5) AND ($i elt 10)))">
+      <if condition="$i eq $page_number['page'] ">
+        <a href="javascript:;" class="current"><{$i}></a>
+        <else />
+        <a href="<{:U('System/index',array('page'=>$i))}>"><{$i}></a>
+        <!--<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>-->
+      </if>
+      <else />
+    </if>
+
+  </for>
+  <if condition="($page_number['count'] gt 10) AND ($page_number['page'] elt $page_number['count'] - 5) ">
+    <a href="javascript:;">...</a>
+  </if>
+  <a href="<if condition="$page_number['page'] eq $page_number['count'] ">javascript:;<else /><{:U('System/index',array('page'=>$page_number['page']+1))}></if>">»</a>
+
+</div>
+
+
+<script>
+  $(function () {
+
+    $('#addnew').click(function(){
+        var founder = $(this).attr("founder");
+        if(founder == 0){
+            window.location.href="<{:U('System/catalogue')}>";
+        }else{
+            alert("无操作权限！");
+        }
+    });
+    $('.founder').click(function(){
+        alert("无操作权限！");
+    })
+
+  });
+  function menu_delete(data,text){
+    if(data === '0'){
+      return confirm("你确定要删除一级目录（"+text+"）么？删除一级目录同时会将目录下的子目录一起删除哦！");
+    }else{
+      return confirm("你确定要删除目录（"+text+"）么！")
+    }
+  }
+
+
+
+</script>
+
+<include file="Public:footer" />

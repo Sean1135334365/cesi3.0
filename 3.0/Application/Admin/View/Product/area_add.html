@@ -1,0 +1,43 @@
+<include file="Public:header" />
+
+<link rel="stylesheet" href="__PUBLIC__/Admin/assets/css/wxuserinfo.css">
+<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+
+<form id="form-article-add" method="post" class="definewidth m20">
+    <input type="hidden" name="id" value="<{$id}>" />
+    <input type="hidden" name="dj" value="<{$dj}>" class="page_dj" />
+    <div align="center">名称：<input type="text" name="name" class="tab_wit5" placeholder="请填写类型" value="" style="width: 100px;"/></div>
+    <br/>
+    <div align="center">
+        <button type="submit" class="btn btn-primary" id="save">添加</button> &nbsp;&nbsp;
+        <button type="submit" class="btn btn-primary" id="down">关闭</button>
+    </div>
+</form>
+
+<script>
+    $('#save').click(function(){
+        var dj = $('.page_dj').val();
+        $.post("<{:U('Admin/Product/area_ajax')}>",$('#form-article-add').serialize(),function(res) {
+            if(res['status']==1){
+                console.log(res);
+                layer.msg(res['msg'],{icon:1,time:5000});
+                var index = parent.layer.getFrameIndex(window.name);
+                parent.$('#hidden').val('<{$id}>,<{$dj}>,<{$page}>').change();
+                parent.layer.close(index);
+            }else{
+                layer.msg(res['msg'],{icon:0,time:4000});
+            }
+        },'json')
+    });
+    $(function(){
+
+
+        $('#down').click(function(){
+            var index = parent.layer.getFrameIndex(window.name);
+            parent.layer.close(index);
+        })
+
+    });
+</script>
+
+<include file="Public:footer" />

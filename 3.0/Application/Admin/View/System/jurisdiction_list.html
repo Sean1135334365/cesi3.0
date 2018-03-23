@@ -1,0 +1,269 @@
+<include file="Public:header" />
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/assets/css/modularity_style.css" />
+<style>
+    @media only screen and (max-width:1280px) and (min-width:968px){#table2{height: 500px;}}
+    @media screen and (max-width:968px){.table2{height: auto;}}
+</style>
+<div class="container">
+    <div class="content">
+        <ul>
+            <if condition="$_SESSION['yzs_userinfo']['inou'] eq 0">
+                <div>
+                    <li>
+                        <div class="li_title">内部账号</div>
+                        <div class="check_btn">
+                            <if condition="$_SESSION['yzs_userinfo']['founder'] eq 0">
+                                <a href="<{:U('System/jurisdiction_update',array('inou'=>2))}>" style="color: #f5f5f5">
+                                <button type="button" class="btn btn-success addnew">新增</button></a>
+                                <else/>
+                                <button type="button" class="btn btn-success addnew founder">新增</button>
+                            </if>
+                        </div>
+                        <table class="table table-bordered table-hover tab_center definewidth m10">
+                            <tr>
+                                <th>编号</th>
+                                <th>职位名称</th>
+                                <!--<th>权限</th>-->
+                                <th>管理操作</th>
+                            </tr>
+                            <volist name="list2" id="vo">
+                                <tr>
+                                    <td><{$i}></td>
+                                    <td><span class="qwer"><{$vo.rank}></span></td>
+                                    <!--<td>...</td>-->
+                                    <td>
+                                        <if condition="$_SESSION['yzs_userinfo']['founder'] eq 0">
+                                            <a href="<{:U('System/jurisdiction_update',array('id'=>$vo['id']))}>">编辑</a>
+                                            <else/>
+                                            <a href="javascript:;" class="founder">编辑</a>
+                                        </if>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </table>
+                    </li>
+                </div>
+
+                <div>
+                    <li>
+                        <div class="li_title">外部账号</div>
+                        <div class="check_btn">
+                            <if condition="$_SESSION['yzs_userinfo']['founder'] eq 0">
+                                <a href="<{:U('System/jurisdiction_update',array('inou'=>1))}>" style="color: #f5f5f5">
+                                <button type="button" class="btn btn-success addnew">新增</button></a>
+                                <else/>
+                                <button type="button" class="btn btn-success addnew founder">新增</button>
+                            </if>
+                        </div>
+                        <table class="table table-bordered table-hover tab_center definewidth m10">
+                            <tr>
+                                <th>编号</th>
+                                <th>职位名称</th>
+                                <!--<th>权限</th>-->
+                                <th>管理操作</th>
+                            </tr>
+                            <volist name="list" id="vo">
+                                <tr>
+                                    <td><{$i}></td>
+                                    <td><span class="qwer"><{$vo.rank}></span></td>
+                                    <!--<td>...</td>-->
+                                    <td>
+                                        <if condition="$_SESSION['yzs_userinfo']['founder'] eq 0">
+                                            <a href="<{:U('System/jurisdiction_update',array('id'=>$vo['id']))}>">编辑</a>
+                                            <else/>
+                                            <a href="javascript:;" class="founder">编辑</a>
+                                        </if>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </table>
+                    </li>
+                </div>
+            </if>
+            <if condition="$_SESSION['yzs_userinfo']['inou'] eq 1">
+                <div>
+                    <li>
+                        <div class="li_title">外部账号</div>
+                        <div class="check_btn">
+                            <if condition="$_SESSION['yzs_userinfo']['founder'] eq 0">
+                                <a href="<{:U('System/jurisdiction_update',array('inou'=>1))}>" style="color: #f5f5f5">
+                                <button type="button" class="btn btn-success addnew">新增</button></a>
+                                <else/>
+                                <button type="button" class="btn btn-success addnew founder">新增</button>
+                            </if>
+                        </div>
+                        <table class="table table-bordered table-hover tab_center definewidth m10">
+                            <tr>
+                                <th>编号</th>
+                                <th>职位名称</th>
+                                <!--<th>权限</th>-->
+                                <th>管理操作</th>
+                            </tr>
+                            <volist name="list" id="vo">
+                                <tr>
+                                    <td><{$i}></td>
+                                    <td><span class="qwer"><{$vo.rank}></span></td>
+                                    <!--<td>...</td>-->
+                                    <td>
+                                        <a href="<{:U('System/jurisdiction_update',array('id'=>$vo['id']))}>">编辑</a>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </table>
+                    </li>
+                </div>
+            </if>
+            <if condition="$_SESSION['yzs_userinfo']['inou'] eq 2">
+                <div>
+                    <li>
+                        <div class="li_title">内部账号</div>
+                        <div class="check_btn">
+                            <if condition="$_SESSION['yzs_userinfo']['founder'] eq 0">
+                                <a href="<{:U('System/jurisdiction_update',array('inou'=>2))}>" style="color: #f5f5f5">
+                                <button type="button" class="btn btn-success addnew">新增</button></a>
+                                <else/>
+                                <button type="button" class="btn btn-success addnew founder">新增</button>
+                            </if>
+                        </div>
+                        <table class="table table-bordered table-hover tab_center definewidth m10">
+                            <tr>
+                                <th>编号</th>
+                                <th>职位名称</th>
+                                <!--<th>权限</th>-->
+                                <th>管理操作</th>
+                            </tr>
+                            <volist name="list2" id="vo">
+                                <tr>
+                                    <td><{$i}></td>
+                                    <td><span class="qwer"><{$vo.rank}></span></td>
+                                    <!--<td>...</td>-->
+                                    <td>
+                                         <a href="<{:U('System/jurisdiction_update',array('id'=>$vo['id']))}>">编辑</a>
+                                    </td>
+                                </tr>
+                            </volist>
+                        </table>
+                    </li>
+                </div>
+            </if>
+
+        </ul>
+
+    </div>
+</div>
+<script>
+    $(function () {
+        /*$('.addnew').click(function(){
+            var founder = $(this).attr("founder");
+                if(founder == 0){
+                    sessionStorage.setItem('inou',$(this).attr('inou'));
+                    window.location.href="<{:U('System/jurisdiction_update')}>";
+                }else{
+                    alert("无此权限！");
+                }
+        });*/
+
+        $('.founder').click(function(){
+            alert("无操作权限！");
+        })
+
+    });
+
+</script>
+
+<!--<form class="form-inline definewidth m20 c_width70" action="<{:U('System/jurisdiction_list')}>" method="post">-->
+  <!--菜单名称：-->
+  <!--<input type="text" name="rank" id="menuname"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;-->
+  <!--<button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew" founder="<{$_SESSION['yzs_userinfo']['founder']}>">新增权限</button>-->
+<!--</form>-->
+
+<!--<table class="table table-bordered table-hover tab_center definewidth m10 c_width70">-->
+  <!--<thead>-->
+  <!--<tr>-->
+    <!--&lt;!&ndash;<th class="table-check">-->
+      <!--<label class="am-checkbox am-secondary">-->
+        <!--<input type="checkbox" class="tpl-table-fz-check" data-am-ucheck>-->
+      <!--</label>-->
+    <!--</th>&ndash;&gt;-->
+    <!--<th class="tab_wit1">编号</th>-->
+    <!--&lt;!&ndash;<th>目录类别</th>&ndash;&gt;-->
+    <!--<th>职位名称</th>-->
+    <!--&lt;!&ndash;<th>部门</th>&ndash;&gt;-->
+    <!--<th>权限</th>-->
+    <!--<th class="tab_wit2">管理操作</th>-->
+  <!--</tr>-->
+  <!--</thead>-->
+  <!--<tbody>-->
+  <!--<volist name="list" id="vo">-->
+    <!--<tr>-->
+      <!--&lt;!&ndash;<td>-->
+        <!--<label class="am-checkbox am-secondary">-->
+          <!--<input type="checkbox" data-am-ucheck name="id" value="<{$vo.id}>">-->
+        <!--</label>-->
+      <!--</td>&ndash;&gt;-->
+      <!--<td><{$vo.id}></td>-->
+      <!--<td><{$vo.rank}></td>-->
+      <!--<td>...</td>-->
+      <!--<td>-->
+          <!--<if condition="$_SESSION['yzs_userinfo']['founder'] eq 0">-->
+              <!--<a href="<{:U('System/jurisdiction_update',array('id'=>$vo['id']))}>">编辑</a>-->
+              <!--<else/>-->
+              <!--<a href="javascript:;" class="founder">编辑</a>-->
+          <!--</if>-->
+
+      <!--</td>-->
+    <!--</tr>-->
+  <!--</volist>-->
+  <!--</tbody>-->
+<!--</table>-->
+
+
+<!--&lt;!&ndash;<div class="page">&ndash;&gt;-->
+  <!--<div class="inline page c_width70">&lt;!&ndash; pull-right&ndash;&gt;-->
+    <!--<a href="<if condition="$page_number['page'] eq 1 ">javascript:;<else /><{:U('System/jurisdiction_list',array('page'=>$page_number['page']-1))}></if>">«</a>-->
+    <!--<if condition="($page_number['count'] gt 10) AND ($page_number['page'] gt 5) ">-->
+      <!--<a href="javascript:;">...</a>-->
+    <!--</if>-->
+    <!--<for start="1" end="$page_number['count']" comparison="elt">-->
+
+      <!--<if condition="($i gt $page_number['page'] - 5) AND (($i lt $page_number['page'] + 5) OR (($page_number['page'] elt 5) AND ($i elt 10)))">-->
+        <!--<if condition="$i eq $page_number['page'] ">-->
+          <!--<a href="javascript:;" class="current"><{$i}></a>-->
+          <!--<else />-->
+          <!--<a href="<{:U('System/jurisdiction_list',array('page'=>$i))}>"><{$i}></a>-->
+          <!--&lt;!&ndash;<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>&ndash;&gt;-->
+        <!--</if>-->
+        <!--<else />-->
+      <!--</if>-->
+
+    <!--</for>-->
+    <!--<if condition="($page_number['count'] gt 10) AND ($page_number['page'] elt $page_number['count'] - 5) ">-->
+      <!--<a href="javascript:;">...</a>-->
+    <!--</if>-->
+    <!--<a href="<if condition="$page_number['page'] eq $page_number['count'] ">javascript:;<else /><{:U('System/jurisdiction_list',array('page'=>$page_number['page']+1))}></if>">»</a>-->
+
+  <!--</div>-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--<script>-->
+  <!--$(function () {-->
+      <!--$('#addnew').click(function(){-->
+        <!--var founder = $(this).attr("founder");-->
+        <!--if(founder == 0){-->
+            <!--window.location.href="<{:U('System/jurisdiction_update')}>";-->
+        <!--}else{-->
+            <!--alert("无此权限！");-->
+        <!--}-->
+      <!--});-->
+
+      <!--$('.founder').click(function(){-->
+          <!--alert("无此权限！");-->
+      <!--})-->
+
+  <!--});-->
+
+<!--</script>-->
+
+
+
+<include file="Public:footer" />

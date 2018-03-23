@@ -1,0 +1,141 @@
+<include file="Public:header" />
+
+
+<style>
+    table.tab_center td, table.tab_center th, td.tab_center, th.tab_center{
+        vertical-align: middle;
+    }
+</style>
+
+<!--顶部-->
+<form class="form-inline definewidth m20" action="<{:U('Product/product_list')}>" method="post">
+  <input type="text" name="name" id="name" class="abc input-default" placeholder="产品名称/产品代码" value="">&nbsp;&nbsp;
+  <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <a href="<{:U('Product/product_redact')}>"><button type="button" class="btn btn-success" id="addnew">新增产品</button></a>
+</form>
+
+<!--主体-->
+<table class="table table-bordered table-hover tab_center definewidth m10">
+  <tr>
+    <th>编号</th>
+    <th>图片</th>
+    <th>代码</th>
+    <th>名称</th>
+    <th>资金方</th>
+    <th>银行类型</th>
+    <th>城市</th>
+    <th>金额下限</th>
+    <th>金额上限</th>
+    <th>添加时间</th>
+    <th>产品状态</th>
+    <!--<th>上次登录时间</th>-->
+    <!--<th>上次登录IP</th>-->
+    <th>操作</th>
+  </tr>
+  <volist name="data" id="vo">
+    <tr>
+      <td><{$i}></td>
+      <td><img src="__PUBLIC__<{$vo.img_url}>" style="width:50px;cursor:pointer;"></td>
+      <td><{$vo.code}></td>
+      <td><{$vo.name}></td>
+      <td><{$vo.source}></td>
+      <td>
+          <if condition="$vo.banks eq 1 ">银行类</if>
+          <if condition="$vo.banks eq 0 ">非银类</if>
+      </td>
+      <td><{$vo.city}></td>
+      <td><{$vo.min_money}></td>
+      <td><{$vo.max_money}></td>
+      <td><{$vo.add_time}></td>
+      <td><{$vo.state}></td>
+      <!--<td><{$vo.enter_time}></td>-->
+      <!--<td><{$vo.enter_ip}></td>-->
+      <td>
+        <a href="<{:U('Product/product_redact',array('id'=>$vo['id']))}>">修改</a>
+          <span style="font-size:16px;">|</span>
+          <if condition="$vo.state eq 1 "><a href="javascript:;" class="deleting" state="0" val="<{$vo['id']}>">已启用</a></if>
+          <if condition="$vo.state eq 0 "><a href="javascript:;" class="deleting" state="1" val="<{$vo['id']}>">已禁用</a></if>
+          <if condition="$_SESSION['yzs_userinfo']['inou'] eq 0 "><span style="font-size:16px;">|</span>
+              <a href="javascript:;" val="<{$vo['id']}>" class="delete" >删除</a></if>
+
+          <!--<a href="<{:U('Product/product_delete',array('id'=>$vo['id']))}>" class="delete">删除</a>-->
+
+        <!--<a href="#" onclick="return menu_delete('<{$vo.delete}>','<{$vo.menu}>')">删除</a>-->
+      </td>
+    </tr>
+  </volist>
+
+</table>
+
+<script>
+    $(function(){
+        $('.deleting').click(function(){
+            var id = $(this).attr('val');
+            var state = $(this).attr('state');
+            var _this = $(this);
+            $.post("<{:U('Admin/Product/deleting')}>",{id:id,state:state},function(code){
+                if(code.status === 1) {
+                    if(code.data === '1') {
+                        alert('修改成功')
+                        _this.attr('state','0');
+                        _this.html('已启用');
+                    }
+                    if(code.data === '0') {
+                        alert('修改成功')
+                        _this.attr('state','1');
+                        /*console.log(_this);*/
+                        _this.html('已禁用');
+                    }
+                    /*location.reload();*/
+                } else {
+                    alert('修改失败')
+                }
+            },'json')
+        })
+
+        $('.delete').click(function(){
+            var id = $(this).attr('val');
+            $.post("<{:U('Admin/Product/delete')}>",{id:id},function(result){
+                if(result.status == 1){
+                    alert('删除成功');
+                    window.location.reload();
+                }else if(result.status == 0){
+                    alert('删除失败');
+                }
+            },'json')
+        })
+
+    })
+</script>
+
+
+
+
+<!--页码-->
+<div class="inline page"><!-- pull-right-->
+  <a href="<if condition="$page_number['page'] eq 1 ">javascript:;<else /><{:U('Product/product_list',array('page'=>$page_number['page']-1))}></if>">«</a>
+  <if condition="($page_number['count'] gt 10) AND ($page_number['page'] gt 5) ">
+    <a href="javascript:;">...</a>
+  </if>
+  <for start="1" end="$page_number['count']" comparison="elt">
+
+    <if condition="($i gt $page_number['page'] - 5) AND (($i lt $page_number['page'] + 5) OR (($page_number['page'] elt 5) AND ($i elt 10)))">
+      <if condition="$i eq $page_number['page'] ">
+        <a href="javascript:;" class="current"><{$i}></a>
+        <else />
+        <a href="<{:U('Product/product_list',array('page'=>$i))}>"><{$i}></a>
+        <!--<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>-->
+      </if>
+      <else />
+    </if>
+
+  </for>
+  <if condition="($page_number['count'] gt 10) AND ($page_number['page'] elt $page_number['count'] - 5) ">
+    <a href="javascript:;">...</a>
+  </if>
+  <a href="<if condition="$page_number['page'] eq $page_number['count'] ">javascript:;<else /><{:U('Product/product_list',array('page'=>$page_number['page']+1))}></if>">»</a>
+
+</div>
+
+
+
+<include file="Public:footer" />

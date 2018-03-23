@@ -1,0 +1,76 @@
+<include file="Public:header" />
+<link rel="stylesheet" href="__PUBLIC__/Weixin/css/reset.css">
+<link rel="stylesheet" href="__PUBLIC__/Weixin/css/produce_success.css">
+<div>
+	<div id="head">
+		<img src="__PUBLIC__/Weixin/images/ico/over.png" alt="">
+		<ul>
+			<li>恭喜您! 您的项目已成功进件</li>
+			<li>产品名称：紫金系列3号</li>
+			<li>订单编号: 89203788909</li>
+		</ul>
+	</div>
+	<hr>
+	<div class="nav1">
+		<div>
+			<img src="__PUBLIC__/Weixin/images/ico/time.png" alt="">
+			<div>
+				<p>12个月</p>
+				<p>借款期限</p>
+			</div>
+		</div>
+		<div>
+			<img src="__PUBLIC__/Weixin/images/ico/money.png" alt="" style="width: 1.33rem;padding-top: 1.45rem;">
+			<div>
+				<p>300万元</p>
+				<p>借款金额</p>
+			</div>
+		</div>
+		<div>
+			<img src="__PUBLIC__/Weixin/images/ico/moden.png" alt="" style="width: 1.33rem;padding-top: 1.67rem;">
+			<div style="border:none;">
+				<p>待审核</p>
+				<p>订单状态</p>
+			</div>
+		</div>
+	</div>
+	<div class="nav2">
+		<p>30分钟内会有专人与你联系</p>
+		<p>请耐心等待!谢谢!</p>
+		<div class="button">
+			知道了
+		</div>
+	</div>
+	<div class="footer">
+		本服务质玉金融服务号提供
+	</div>
+	<div class="nav3">
+		<img src="__PUBLIC__/Weixin/images/ico/837022559314602482.jpg" alt="">
+		<ul>
+			<li>·&#12288;提供产调、征信待查服务</li>
+			<li>·&#12288;审批通过请扫码支付下户费</li>
+			<li>·&#12288;下户费：<span style="color: #d0011b;">2000元</span></li>
+		</ul>
+	</div>
+</div>
+<script>
+	function resetPage(){  //移动端适配;
+	    var deviceWidth = document.documentElement.clientWidth;
+	    var scale = deviceWidth/640;
+	    if( deviceWidth>=640 ){
+	            document.documentElement.style.fontSize="100px";
+	    }else{
+	            document.documentElement.style.fontSize=28.85*scale+"px";
+	    };  
+	};
+	window.onload = function (){
+	    resetPage();
+	};
+	window.onresize = function (){
+	    resetPage();
+	};
+	$('.button').click(function(){
+		window.open('http://cesi3.0.zhiyujinrong.com/index.php/Weixin/Apply/product.html','_self').close();
+	})
+</script>
+<include file="Public:footer" />

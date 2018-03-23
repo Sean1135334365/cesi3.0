@@ -1,0 +1,1121 @@
+[ 2018-03-22T10:20:28+08:00 ] 127.0.0.1 /index.php/Admin/User/wechat_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014127s ]
+
+[ 2018-03-22T10:20:28+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006955s ]
+
+[ 2018-03-22T10:20:34+08:00 ] 127.0.0.1 /index.php/Admin/Login/check_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0259s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: UPDATE `yzs_admin_users` SET `enter_time`='1521685234',`enter_ip`='127.0.0.1' WHERE ( id=1 ) [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0142s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Login','check_code','1','张中','','{\"username\":\"admin\",\"password\":\"admin123\"}','1521685234') [ RunTime:0.0018s ]
+
+[ 2018-03-22T10:20:35+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0090s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1521685235') [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0144s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0007s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-03-22T10:20:35+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0057s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1521685235') [ RunTime:0.0057s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0011s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0145s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0162s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.077841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000356s ]
+
+[ 2018-03-22T15:05:15+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0150s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_list','1','张中','','','1521702314') [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( state = '1' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62) )  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,2) )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(2,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(2,3) )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.150427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001980s ]
+
+[ 2018-03-22T15:08:59+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0088s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1521702538') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0079s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0002s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2018-03-22T15:08:59+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0055s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_list','1','张中','','','1521702539') [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( state = '1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,2) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,3) )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,3) )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(2,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(2,3) )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2018-03-22T15:08:59+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0035s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1521702539') [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0049s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0034s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-03-22T15:09:12+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_add_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0073s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_add_all','1','张中','','{\"name\":\"\\u5916\\u90e8\",\"email\":\"412@qq.com\",\"id\":\"56\",\"code\":\"1\"}','1521702552') [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(56) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( category=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_email_remind` SET `email`='5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,56' WHERE ( id=1 ) [ RunTime:0.0035s ]
+
+[ 2018-03-22T15:09:19+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0078s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1521702559') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0053s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0002s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000303s ]
+
+[ 2018-03-22T15:09:19+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0057s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1521702559') [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0059s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0054s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2018-03-22T15:09:19+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0044s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_list','1','张中','','','1521702559') [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( state = '1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,56) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,56) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(2,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(2,3) )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2018-03-22T15:09:24+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/delete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0076s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','delete','1','张中','','{\"id\":\"56\",\"code\":\"1\"}','1521702564') [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(56) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( category=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_email_remind` SET `email`='5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62' WHERE ( id=1 ) [ RunTime:0.0023s ]
+
+[ 2018-03-22T15:12:47+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0165s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1521702767') [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0052s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0003s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-03-22T15:12:48+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0170s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1521702768') [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0054s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0080s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048406s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2018-03-22T15:12:48+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0042s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_list','1','张中','','','1521702768') [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( state = '1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(2,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(2,3) )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2018-03-22T15:12:50+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_add_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0075s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_add_all','1','张中','','{\"name\":\"\\u5916\\u90e8\",\"email\":\"412@qq.com\",\"id\":\"56\",\"code\":\"1\"}','1521702770') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(56) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( category=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_email_remind` SET `email`='5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,56' WHERE ( id=1 ) [ RunTime:0.0022s ]
+
+[ 2018-03-22T15:12:56+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0110s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1521702776') [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0054s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0002s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2018-03-22T15:12:57+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0033s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1521702776') [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0004s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0096s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0057s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2018-03-22T15:12:57+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0139s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_list','1','张中','','','1521702777') [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( state = '1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,56) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,56) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,2) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,3) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(2,3) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(2,3) )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2018-03-22T15:13:01+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/delete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0093s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','delete','1','张中','','{\"id\":\"56\",\"code\":\"1\"}','1521702781') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(56) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( category=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_email_remind` SET `email`='5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62' WHERE ( id=1 ) [ RunTime:0.0025s ]
+
+[ 2018-03-22T15:13:07+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_add_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0096s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_add_all','1','张中','','{\"name\":\" \\u5916\\u90e8\",\"email\":\"412@qq.com\",\"id\":\"56value=56\\/\",\"code\":\"1\"}','1521702787') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0054s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `yzs_email` WHERE ( id in(56value=56/) ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ') )' at line 1
+ [ SQL语句 ] : SELECT * FROM `yzs_email` WHERE ( id in(56value=56/) ) 
+
+[ 2018-03-22T15:13:09+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_add_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0092s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_add_all','1','张中','','{\"name\":\"\\u6960\\u6960\\u5450\",\"email\":\"341265@qq.com\",\"id\":\"65\",\"code\":\"1\"}','1521702789') [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(65) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( category=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_email_remind` SET `email`='5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,65' WHERE ( id=1 ) [ RunTime:0.0024s ]
+
+[ 2018-03-22T15:13:13+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_add_all.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0149s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_add_all','1','张中','','{\"name\":\"\\u6960\\u6960\\u5450\",\"email\":\"341265@qq.com\",\"id\":\"65\",\"code\":\"1\"}','1521702793') [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(65) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( category=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_email_remind` SET `email`='5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,65,65' WHERE ( id=1 ) [ RunTime:0.0023s ]
+
+[ 2018-03-22T15:13:16+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0159s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1521702796') [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0053s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0002s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000312s ]
+
+[ 2018-03-22T15:13:17+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0063s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1521702796') [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0013s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0077s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0085s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2018-03-22T15:13:17+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0092s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_list','1','张中','','','1521702797') [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( state = '1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,65,65) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62,65,65) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,2) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,3) )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(2,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(2,3) )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057507s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2018-03-22T15:13:22+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/delete.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0156s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','delete','1','张中','','{\"id\":\"65\",\"code\":\"1\"}','1521702802') [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(65) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( category=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_email_remind` SET `email`='5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62' WHERE ( id=1 ) [ RunTime:0.0023s ]
+
+[ 2018-03-22T15:13:25+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0180s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1521702805') [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0058s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0002s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given H:\www\3.0\Application\Admin\Controller\IndexController.class.php 第 20 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2018-03-22T15:13:25+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0055s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1521702805') [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0083s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 274 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0057s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given H:\www\3.0\Application\Admin\Controller\SystemController.class.php 第 275 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000301s ]
+
+[ 2018-03-22T15:13:25+08:00 ] 127.0.0.1 /index.php/Admin/Interaction/email_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0057s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Interaction','email_list','1','张中','','','1521702805') [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `yzs_email_remind` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `yzs_email` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `yzs_email_remind` WHERE ( state = '1' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(5053,53,49,50,33,54,32,51,34,2,3,48,52,55,60,62) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,2) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(1,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(1,3) )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id in(2,3) )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_email` WHERE ( id not in(2,3) )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+

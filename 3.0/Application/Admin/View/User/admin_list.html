@@ -1,0 +1,63 @@
+<include file="Public:header" />
+
+
+<form class="form-inline definewidth m20" action="index.html" method="get">
+  菜单名称：
+  <input type="text" name="menuname" id="menuname"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+  <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+</form>
+
+<table class="table table-bordered table-hover definewidth m10">
+  <tr>
+    <th>编号</th>
+    <th>用户名</th>
+    <th>昵称</th>
+    <th>姓名</th>
+    <th>手机号码</th>
+    <th>邮箱</th>
+    <th>年龄</th>
+    <th>性别</th>
+    <th>权限级别</th>
+    <th>注册时间</th>
+    <th>注册IP</th>
+    <th>上次登录时间</th>
+    <th>上次登录IP</th>
+    <th>操作</th>
+  </tr>
+  <volist name="data" id="vo">
+    <tr>
+      <td><{$vo.number}></td>
+      <td><{$vo.username}></td>
+      <td><{$vo.nickname}></td>
+      <td><{$vo.name}></td>
+      <td><{$vo.mobile}></td>
+      <td><{$vo.mail}></td>
+      <td><{$vo.age}></td>
+      <td><{$vo.gender}></td>
+      <td><{$vo.rank}></td>
+      <td><{$vo.register_time}></td>
+      <td><{$vo.register_ip}></td>
+      <td><{$vo.enter_time}></td>
+      <td><{$vo.enter_ip}></td>
+      <td>
+        <a href="<{:U('User/admin_grouping',array('id'=>$vo['id']))}>">修改</a> <span style="font-size:16px;">|</span>
+        <a href="<{:U('User/delete_admin',array('id'=>$vo['id']))}>" onclick="return menu_delete('<{$vo.delete}>','<{$vo.menu}>')">删除</a>
+      </td>
+    </tr>
+  </volist>
+
+</table>
+
+
+<script>
+  $(function () {
+
+    $('#addnew').click(function(){
+      window.location.href="<{:U('User/addition_admin')}>";
+    });
+
+  });
+
+</script>
+
+<include file="Public:footer" />

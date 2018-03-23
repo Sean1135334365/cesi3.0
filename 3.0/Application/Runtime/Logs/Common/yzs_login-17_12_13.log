@@ -1,0 +1,18 @@
+[ 2017-12-13T09:56:20+08:00 ] 116.62.209.27 /index.php/explicit_not_exist_path
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+ERR: 无法加载模块:Explicit_not_exist_path
+
+[ 2017-12-13T15:58:36+08:00 ] 116.231.148.40 /index.php//Application/Admin/View/System/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+ERR: 无法加载模块:Application
+
+[ 2017-12-13T16:01:47+08:00 ] 116.231.148.40 /index.php/Application/Admin/View/System/admin_grouping.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+ERR: 无法加载模块:Application
+

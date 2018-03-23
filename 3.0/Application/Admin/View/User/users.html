@@ -1,0 +1,64 @@
+<include file="Public:header" />
+
+<form class="form-inline definewidth m20" action="" method="get">
+  <input type="text" name="menuname" id="menuname"class="abc input-default" placeholder="" value="">&nbsp;&nbsp;
+  <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+</form>
+
+<table class="table table-bordered table-hover definewidth m10">
+  <tr>
+    <th>uid</th>
+    <th>openid</th>
+    <th>用户微信号</th>
+    <th>微信昵称</th>
+    <th>微信头像</th>
+    <th>微信性别</th>
+    <th>微信城市</th>
+    <th>是否关注微信</th>
+    <!--<th>access_token</th>-->
+    <!--<th>refresh_token</th>-->
+    <th>授权</th>
+    <th>创建时间</th>
+    <th>创建时IP</th>
+    <th>渠道号</th>
+    <th>操作</th>
+  </tr>
+
+  <volist name="list" id="vo">
+    <tr>
+      <td><{$vo.uid}></td>
+      <td><{$vo.openid}></td>
+      <td><{$vo.wx_number}></td>
+      <td><{$vo.wxname}></td>
+      <td><img src="<{$vo.wxpic}>" style="width:50px;"></td>
+      <td><{$vo.wxsex}></td>
+      <td><{$vo.wxcity}></td>
+      <td><{$vo.wxfollow}></td>
+      <!--<td><{$vo.access_token}></td>-->
+      <!--<td><{$vo.refresh_token}></td>-->
+      <td><{$vo.is_auth}></td>
+      <td><{$vo.create_date}></td>
+      <td><{$vo.create_ip}></td>
+      <td><{$vo.channel_number}></td>
+      <td>
+        <a href="<{:U('System/admin_grouping',array('id'=>$vo['id']))}>">修改</a> <span style="font-size:16px;">|</span>
+        <a href="<{:U('System/delete_admin',array('id'=>$vo['id']))}>" onclick="return menu_delete('<{$vo.delete}>','<{$vo.menu}>')">删除</a>
+      </td>
+    </tr>
+  </volist>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<include file="Public:footer" />
+

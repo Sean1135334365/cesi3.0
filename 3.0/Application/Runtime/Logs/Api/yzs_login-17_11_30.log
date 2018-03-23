@@ -1,0 +1,119 @@
+[ 2017-11-30T09:23:37+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调参数错误）
+返回结果：[]
+
+返回结果GET：{"token":"9164152B7EB0AF6EA589B1BE06073304"}
+调用时间：2017-11-30 09:23:37
+[ 2017-11-30T09:23:37+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2017-11-30T09:30:52+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='230' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='初审完成' WHERE ( orderNo='230' ) [ RunTime:0.0059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-11-30T11:17:12+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='230' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='正在查询',`ly`='正在查询,等待结果',`state`='正在查询',`up_time`='1512011832' WHERE ( orderNo='230' ) [ RunTime:0.0136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-11-30T11:17:44+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='229' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512011864' WHERE ( orderNo='229' ) [ RunTime:0.0165s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='229' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0006s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2017-11-30T11:17:53+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='228' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='初审完成',`ly`='初审完成,等待查询',`state`='正在查询',`up_time`='1512011873' WHERE ( orderNo='228' ) [ RunTime:0.0134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000519s ]
+
+[ 2017-11-30T11:18:06+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='回退',`ly`='被回退,重新编辑后再次提交查询',`state`='回退',`up_time`='1512011886' WHERE ( orderNo='227' ) [ RunTime:0.0129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2017-11-30T17:37:37+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512034657' WHERE ( orderNo='227' ) [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+

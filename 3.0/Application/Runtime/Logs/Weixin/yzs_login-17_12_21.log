@@ -1,0 +1,775 @@
+[ 2017-12-21T17:19:57+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `yzs_wxusers` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzs_wxusers` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/58e89fd98b4bca12df8da42dd3854b35.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000458s ]
+
+[ 2017-12-21T17:19:59+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/js_sdk_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `yzs_access_token` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_access_token` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_access_token` SET `state`='2' WHERE ( id=2 ) [ RunTime:0.0057s ]
+SQL: SELECT * FROM `yzs_access_token` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_access_token` SET `state`='2' WHERE ( id=1 ) [ RunTime:0.0039s ]
+SQL: UPDATE `yzs_access_token` SET `access_token`='5_9s1IeCtU0OXYKsx-neWQ1Os3V3GLO6yUZ-vkiqxmOkh35dsjdWSkbdzvuKO_GRi_vf-hbpQ3lrznlH8csWIHWC4Sr0YCzStu_lrrOZO3hH2wOSnu77MQDzM-eUQQNFdAJAURJ',`expires_in`='7200',`t_time`='1513847999',`state`='1' WHERE ( id=1 ) [ RunTime:0.0049s ]
+SQL: UPDATE `yzs_access_token` SET `access_token`='HoagFKDcsGMVCIY2vOjf9o2ZmTCWrwHcvUCuf54gA7OIe5sP2sVq_9jx0wc-63rssYNZvJCTSli01R4pkbRErw',`expires_in`='7200',`t_time`='1513847999',`state`='1' WHERE ( id=2 ) [ RunTime:0.0051s ]
+NOTIC: [8] Uninitialized string offset: 58 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+
+[ 2017-12-21T17:20:00+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1' [ RunTime:0.0008s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%上海市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0007s ]
+
+[ 2017-12-21T17:20:00+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_screen.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 122 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( state='1' and  find_in_set('1', city) and banks=0 )  [ RunTime:0.0005s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(2,3,10,12) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(3,4,5,6,12,13,14,15,435,438,439) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+
+[ 2017-12-21T17:20:15+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: select `id` from yzs_territory where name like '%北京市%' and grade='2' and forbidden='1' [ RunTime:0.0006s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%北京市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%北京市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-21T17:24:16+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/58e89fd98b4bca12df8da42dd3854b35.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009650s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-12-21T17:24:17+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/js_sdk_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `yzs_access_token` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_access_token` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Uninitialized string offset: 55 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+
+[ 2017-12-21T17:24:18+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1' [ RunTime:0.0005s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%上海市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-21T17:24:18+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_screen.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 122 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( state='1' and  find_in_set('1', city) and banks=0 )  [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(2,3,10,12) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0001s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0001s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(3,4,5,6,12,13,14,15,435,438,439) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0001s ]
+
+[ 2017-12-21T17:24:23+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: select `id` from yzs_territory where name like '%重庆市%' and grade='2' and forbidden='1' [ RunTime:0.0005s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%重庆市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%重庆市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-21T17:24:36+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/58e89fd98b4bca12df8da42dd3854b35.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-12-21T17:24:37+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/js_sdk_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `yzs_access_token` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_access_token` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Uninitialized string offset: 56 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+
+[ 2017-12-21T17:24:38+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1' [ RunTime:0.0005s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%上海市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-21T17:24:38+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_screen.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 122 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( state='1' and  find_in_set('1', city) and banks=0 )  [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(2,3,10,12) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(3,4,5,6,12,13,14,15,435,438,439) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+
+[ 2017-12-21T17:24:42+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: select `id` from yzs_territory where name like '%重庆市%' and grade='2' and forbidden='1' [ RunTime:0.0005s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%重庆市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%重庆市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-21T17:24:42+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_screen.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 122 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( state='1' and  find_in_set('16', city) and banks=0 )  [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(16,18,19,291,340,97,232,16,18,19) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(8,99,342,307,308,233) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,4) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+
+[ 2017-12-21T17:24:47+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: select `id` from yzs_territory where name like '%北京市%' and grade='2' and forbidden='1' [ RunTime:0.0005s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%北京市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%北京市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-21T17:24:47+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_screen.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 122 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( state='1' and  find_in_set('18', city) and banks=0 )  [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(16,18,19,291,340,97,232,16,18,19) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(8,99,342,307,308,233) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,4) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(18) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+
+[ 2017-12-21T17:24:48+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/58e89fd98b4bca12df8da42dd3854b35.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2017-12-21T17:24:49+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/js_sdk_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `yzs_access_token` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_access_token` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Uninitialized string offset: 58 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+NOTIC: [8] Uninitialized string offset: 60 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+NOTIC: [8] Uninitialized string offset: 55 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+NOTIC: [8] Uninitialized string offset: 55 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+
+[ 2017-12-21T17:24:50+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1' [ RunTime:0.0005s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%上海市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-21T17:24:50+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_screen.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 122 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( state='1' and  find_in_set('1', city) and banks=0 )  [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(2,3,10,12) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(3,4,5,6,12,13,14,15,435,438,439) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+
+[ 2017-12-21T17:24:54+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: select `id` from yzs_territory where name like '%天津市%' and grade='2' and forbidden='1' [ RunTime:0.0005s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%天津市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%天津市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0005s ]
+
+[ 2017-12-21T17:24:54+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_screen.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 122 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( state='1' and  find_in_set('19', city) and banks=0 )  [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(16,18,19,291,340,97,232,16,18,19) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(8,99,342,307,308,233) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,4) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+
+[ 2017-12-21T17:28:01+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_step.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/89dbc6d23edfbe893a907d3a97238394.php 第 4 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/89dbc6d23edfbe893a907d3a97238394.php 第 59 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/89dbc6d23edfbe893a907d3a97238394.php 第 106 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/89dbc6d23edfbe893a907d3a97238394.php 第 106 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/89dbc6d23edfbe893a907d3a97238394.php 第 120 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-12-21T18:14:06+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_introduce.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `yzs_wxusers` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzs_wxusers` WHERE ( id=23 ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 351 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 380 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 382 行.
+NOTIC: [8] Undefined variable: count_type /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 384 行.
+NOTIC: [8] Undefined variable: impawn_type /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 385 行.
+NOTIC: [8] Undefined variable: month_text /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 386 行.
+NOTIC: [8] Undefined variable: obj /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 387 行.
+NOTIC: [8] Undefined variable: cost /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 388 行.
+NOTIC: [8] Undefined variable: best_null /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 390 行.
+NOTIC: [8] Undefined variable: conut /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 392 行.
+NOTIC: [8] Undefined variable: city_t /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 393 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/0755e848f3f3091d648539bb4e240237.php 第 4 行.
+NOTIC: [8] Undefined variable: ter /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/0755e848f3f3091d648539bb4e240237.php 第 153 行.
+NOTIC: [8] Undefined variable: id /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/0755e848f3f3091d648539bb4e240237.php 第 201 行.
+NOTIC: [8] Undefined variable: id /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/0755e848f3f3091d648539bb4e240237.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2017-12-21T18:14:39+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/58e89fd98b4bca12df8da42dd3854b35.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000457s ]
+
+[ 2017-12-21T18:14:40+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/js_sdk_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `yzs_access_token` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_access_token` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Uninitialized string offset: 57 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+NOTIC: [8] Uninitialized string offset: 58 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+NOTIC: [8] Uninitialized string offset: 59 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+
+[ 2017-12-21T18:14:52+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/58e89fd98b4bca12df8da42dd3854b35.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000459s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2017-12-21T18:14:53+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/js_sdk_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `yzs_access_token` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_access_token` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Uninitialized string offset: 54 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+NOTIC: [8] Uninitialized string offset: 59 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+NOTIC: [8] Uninitialized string offset: 60 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+NOTIC: [8] Uninitialized string offset: 59 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApiwechatController.class.php 第 108 行.
+
+[ 2017-12-21T18:14:54+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/initial_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1' [ RunTime:0.0005s ]
+SQL: select * from yzs_territory where higher_up in(select `id` from yzs_territory where name like '%上海市%' and grade='2' and forbidden='1') and forbidden='1' [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( name like '%上海市%' and grade='2' and forbidden='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_house_type`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( grade != 3 and forbidden='1' )  [ RunTime:0.0004s ]
+
+[ 2017-12-21T18:14:54+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_screen.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 109 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 112 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 116 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 122 行.
+NOTIC: [8] Undefined variable: data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 125 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( state='1' and  find_in_set('1', city) and banks=0 )  [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(2,3,10,12) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as territory from yzs_territory where id in(3,4,5,6,12,13,14,15,435,438,439) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as loans_type from yzs_loans_type where id in(1) [ RunTime:0.0002s ]
+
+[ 2017-12-21T18:15:03+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_introduce/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: select id,name from yzs_territory where id in(1) and forbidden='1' limit 3 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( higher_up='1' and forbidden='1' )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 269 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Weixin/Controller/ApplyController.class.php 第 278 行.
+SQL: select name as house from yzs_house_type where id in(3,14,15) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_month` [ RunTime:0.0004s ]
+SQL: SELECT `month` FROM `yzs_month` WHERE ( id in(2,4,7,8) )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/0755e848f3f3091d648539bb4e240237.php 第 4 行.
+NOTIC: [8] Undefined variable: id /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/0755e848f3f3091d648539bb4e240237.php 第 201 行.
+NOTIC: [8] Undefined variable: id /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/0755e848f3f3091d648539bb4e240237.php 第 249 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015404s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-12-21T18:15:07+08:00 ] 180.173.192.37 /index.php/Weixin/Apply/product_step/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `yzs_product` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_month` [ RunTime:0.0003s ]
+SQL: SELECT `month` FROM `yzs_month` WHERE ( id in(2,4,7,8) )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/89dbc6d23edfbe893a907d3a97238394.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-12-21T18:16:03+08:00 ] 180.173.192.37 /index.php/Weixin/File/img_file/type/weixin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/wwwroot/cesi3.0.zhiyujinrong.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-12-21T18:16:06+08:00 ] 180.173.192.37 /index.php/Weixin/File/img_file/type/weixin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/wwwroot/cesi3.0.zhiyujinrong.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-12-21T18:16:26+08:00 ] 180.173.192.37 /index.php/Weixin/File/img_file/type/weixin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/wwwroot/cesi3.0.zhiyujinrong.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-12-21T18:16:36+08:00 ] 180.173.192.37 /index.php/Weixin/File/img_file/type/weixin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/wwwroot/cesi3.0.zhiyujinrong.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-12-21T18:16:37+08:00 ] 180.173.192.37 /index.php/Weixin/File/img_file/type/weixin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/wwwroot/cesi3.0.zhiyujinrong.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-12-21T18:16:45+08:00 ] 180.173.192.37 /index.php/Weixin/File/img_file/type/weixin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/wwwroot/cesi3.0.zhiyujinrong.com/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2017-12-21T18:18:26+08:00 ] 180.173.192.37 /index.php/Weixin/Apiwechat/note_check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `yzs_wxusers` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzs_wxusers` WHERE ( id='23' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-12-21T18:18:27+08:00 ] 180.173.192.37 /index.php/Weixin/Order/order_for.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0014s ]
+SQL: SELECT `banks` FROM `yzs_product` WHERE ( id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_wx_application` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_wx_application` (`uid`,`mobile`,`channel`,`order_number`,`product`,`loanamount`,`number`,`p_power_num`,`adult`,`matrimony`,`mate_y_n`,`standby`,`territory_id`,`banks`,`wx_time`,`wx_state`) VALUES ('23','','SP011','YZS15138515063476572','2','12340000','12','1','','{\"1\":[\"0\"]}','{\"1\":[\"2\"]}','2','1','0','1513851506','0') [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_wx_identification_url` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_wx_identification_url` (`o_id`,`identity_card_frontal`,`identity_card_mate`,`marriage_certificate`,`household_register`,`standby_house`,`pledge_house`,`application_form`,`credit_report`,`estate_survey`,`bank`,`wx_data`) VALUES ('487','{\"1\":[\"\\/uploading\\/wechat\\/images\\/weixin\\/YZS20171221181603_3615.jpg\",\"\\/uploading\\/wechat\\/images\\/weixin\\/YZS20171221181606_3626.jpg\"]}','[]','[]','[\"\\/uploading\\/wechat\\/images\\/weixin\\/YZS20171221181626_3535.jpg\",\"\\/uploading\\/wechat\\/images\\/weixin\\/YZS20171221181636_4249.jpg\"]','[]','[\"\\/uploading\\/wechat\\/images\\/weixin\\/YZS20171221181637_9016.jpg\"]','[\"\\/uploading\\/wechat\\/images\\/weixin\\/YZS20171221181645_2269.jpg\"]','[]','[]','[]','[]') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: html_title /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Weixin/c61606221cbc9f1baa260fdfb415263a.php 第 4 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+

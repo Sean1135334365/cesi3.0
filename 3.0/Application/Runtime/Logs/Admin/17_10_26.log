@@ -1,0 +1,2118 @@
+[ 2017-10-26T16:23:13+08:00 ] 180.173.195.106 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+
+[ 2017-10-26T16:23:13+08:00 ] 180.173.195.106 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2017-10-26T16:24:00+08:00 ] 180.173.195.106 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-10-26T16:24:03+08:00 ] 180.173.195.106 /index.php/Admin/Login/check_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( username='will' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_admin_users` SET `enter_time`='1509006243',`enter_ip`='180.173.195.106' WHERE ( id=3 ) [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Login','check_code','3','will','','{\"username\":\"will\",\"password\":\"zw0403301x\"}','1509006243') [ RunTime:0.0045s ]
+
+[ 2017-10-26T16:24:04+08:00 ] 180.173.195.106 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1509006244') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000496s ]
+
+[ 2017-10-26T16:24:04+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006244') [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2017-10-26T16:24:05+08:00 ] 180.173.195.106 /index.php/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','index','3','will','','','1509006245') [ RunTime:0.0135s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_catalogue` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_catalogue`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( 1 ) ORDER BY state desc, sort, id, superior LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2017-10-26T16:24:06+08:00 ] 180.173.195.106 /index.php/Admin/System/jurisdiction_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','jurisdiction_list','3','will','','','1509006246') [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_rank` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_rank` WHERE ( 1 ) ORDER BY id LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-10-26T16:24:07+08:00 ] 180.173.195.106 /index.php/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','index','3','will','','','1509006247') [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_catalogue` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( 1 ) ORDER BY state desc, sort, id, superior LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2017-10-26T16:24:07+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006247') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000538s ]
+
+[ 2017-10-26T16:26:07+08:00 ] 180.173.195.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1509006367') [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-10-26T16:26:07+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006367') [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-10-26T16:26:16+08:00 ] 180.173.195.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1509006376') [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-10-26T16:26:16+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006376') [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2017-10-26T16:26:19+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','3','will','','','1509006379') [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-10-26T16:26:39+08:00 ] 180.173.195.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1509006399') [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2017-10-26T16:26:40+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','3','will','','','1509006400') [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2017-10-26T16:26:40+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006400') [ RunTime:0.0167s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2017-10-26T16:29:59+08:00 ] 180.173.195.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+
+[ 2017-10-26T16:29:59+08:00 ] 180.173.195.106 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000468s ]
+
+[ 2017-10-26T16:30:13+08:00 ] 180.173.195.106 /index.php/Admin/Login/check_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( username='will' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_admin_users` SET `enter_time`='1509006613',`enter_ip`='180.173.195.106' WHERE ( id=3 ) [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Login','check_code','3','will','','{\"username\":\"will\",\"password\":\"zw0403301x\"}','1509006613') [ RunTime:0.0044s ]
+
+[ 2017-10-26T16:30:14+08:00 ] 180.173.195.106 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1509006614') [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-10-26T16:30:14+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006614') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-10-26T16:30:20+08:00 ] 180.173.195.106 /index.php/Admin/System/addition_admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','addition_admin','3','will','','','1509006620') [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 41 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 45 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 49 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 53 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 57 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 61 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 65 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 70 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 71 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 72 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 79 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 80 行.
+NOTIC: [8] Undefined variable: user /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/9c2561d810e8e6d93575d4017573ab0d.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+
+[ 2017-10-26T16:31:16+08:00 ] 180.173.195.106 /index.php/Admin/System/addition_admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','addition_admin','3','will','','{\"username\":\"guiyunfan\",\"nickname\":\"\",\"name\":\"guiyunfan\",\"password\":\"123456\",\"mobile\":\"18301912980\",\"mail\":\"2376937035@qq.com\",\"age\":\"2\",\"gender\":\"1\",\"rank\":\"1\"}','1509006676') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_admin_users` (`username`,`password`,`nickname`,`name`,`mobile`,`mail`,`age`,`gender`,`rank`,`register_time`,`register_ip`) VALUES ('guiyunfan','e10adc3949ba59abbe56e057f20f883e','','guiyunfan','18301912980','2376937035@qq.com','2','1','1','1509006676','180.173.195.106') [ RunTime:0.0048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+
+[ 2017-10-26T16:31:17+08:00 ] 180.173.195.106 /index.php/Admin/User/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('User','admin_list','3','will','','','1509006677') [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_admin_users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/4331c79eec9fa28b681d3502ebe3009c.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007313s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-10-26T16:31:21+08:00 ] 180.173.195.106 /index.php/Admin/Login/quit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-10-26T16:31:23+08:00 ] 180.173.195.106 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2017-10-26T16:31:30+08:00 ] 180.173.195.106 /index.php/Admin/Login/check_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( username='guiyunfan' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_admin_users` SET `enter_time`='1509006690',`enter_ip`='180.173.195.106' WHERE ( id=7 ) [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Login','check_code','7','guiyunfan','','{\"username\":\"guiyunfan\",\"password\":\"123456\"}','1509006690') [ RunTime:0.0043s ]
+
+[ 2017-10-26T16:31:31+08:00 ] 180.173.195.106 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','7','guiyunfan','','','1509006691') [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000452s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2017-10-26T16:31:31+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','7','guiyunfan','','','1509006691') [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2017-10-26T16:31:45+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','7','guiyunfan','','','1509006705') [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+
+[ 2017-10-26T16:33:10+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html?name=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','7','guiyunfan','{\"name\":\"1\"}','','1509006790') [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where code like '%%' or name like '%%' limit 0,20 [ RunTime:0.0005s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008401s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-10-26T16:33:20+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','7','guiyunfan','','','1509006800') [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-10-26T16:33:25+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','7','guiyunfan','','','1509006805') [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2017-10-26T16:33:32+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html?name=ps
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','7','guiyunfan','{\"name\":\"ps\"}','','1509006812') [ RunTime:0.0123s ]
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where code like '%%' or name like '%%' limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-10-26T16:33:40+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html?name=sd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','7','guiyunfan','{\"name\":\"sd\"}','','1509006820') [ RunTime:0.0151s ]
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where code like '%%' or name like '%%' limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-10-26T16:33:58+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','3','will','','','1509006838') [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2017-10-26T16:34:01+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html?name=sd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','3','will','{\"name\":\"sd\"}','','1509006841') [ RunTime:0.0125s ]
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where code like '%%' or name like '%%' limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000477s ]
+
+[ 2017-10-26T16:34:04+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list/page/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','7','guiyunfan','{\"page\":\"2\"}','','1509006844') [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 20,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008203s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000523s ]
+
+[ 2017-10-26T16:34:09+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','7','guiyunfan','','','1509006849') [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2017-10-26T16:34:56+08:00 ] 180.173.195.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1509006896') [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
+
+[ 2017-10-26T16:34:56+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','3','will','','','1509006896') [ RunTime:0.0153s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2017-10-26T16:34:56+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006896') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-10-26T16:34:57+08:00 ] 180.173.195.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1509006897') [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-10-26T16:34:58+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006898') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-10-26T16:34:58+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','3','will','','','1509006898') [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2017-10-26T16:35:26+08:00 ] 180.173.195.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1509006926') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-10-26T16:35:27+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','3','will','','','1509006927') [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2017-10-26T16:35:27+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1509006927') [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2017-10-26T16:36:42+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html?name=sd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','3','will','{\"name\":\"sd\"}','','1509007002') [ RunTime:0.0131s ]
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 39 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 51 行.
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where code like '%%' or name like '%%' limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-10-26T16:39:44+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','7','guiyunfan','','','1509007183') [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000460s ]
+
+[ 2017-10-26T16:39:48+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','7','guiyunfan','','{\"name\":\"sd\"}','1509007188') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0004s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where code like '%sd%' or name like '%sd%' limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-10-26T16:39:52+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','7','guiyunfan','','','1509007192') [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000450s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2017-10-26T16:50:52+08:00 ] 106.11.242.42 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+
+[ 2017-10-26T16:50:52+08:00 ] 106.11.242.32 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000399s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000433s ]
+
+[ 2017-10-26T16:59:50+08:00 ] 180.173.195.106 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','7','guiyunfan','','','1509008390') [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2017-10-26T16:59:51+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','7','guiyunfan','','','1509008391') [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-10-26T16:59:56+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','7','guiyunfan','','','1509008396') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0011s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-10-26T17:00:01+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','7','guiyunfan','','','1509008401') [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-10-26T17:00:54+08:00 ] 180.173.195.106 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','7','guiyunfan','','','1509008454') [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2017-10-26T17:00:55+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','7','guiyunfan','','','1509008455') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016216s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-10-26T17:00:55+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','7','guiyunfan','','','1509008455') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2017-10-26T17:01:25+08:00 ] 180.173.195.106 /index.php/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','index','7','guiyunfan','','','1509008485') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_catalogue` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_catalogue`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( 1 ) ORDER BY state desc, sort, id, superior LIMIT 0,20   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000448s ]
+
+[ 2017-10-26T17:01:40+08:00 ] 180.173.195.106 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','7','guiyunfan','','','1509008500') [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 249 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2017-10-26T17:01:53+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','7','guiyunfan','','','1509008513') [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000463s ]
+
+[ 2017-10-26T17:01:54+08:00 ] 180.173.195.106 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','7','guiyunfan','','','1509008514') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0004s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0003s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,7,16) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 75 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 76 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-10-26T17:01:54+08:00 ] 180.173.195.106 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','7','guiyunfan','','','1509008514') [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` ORDER BY id LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_territory` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_territory` LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+

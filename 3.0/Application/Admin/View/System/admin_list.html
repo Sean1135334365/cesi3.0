@@ -1,0 +1,117 @@
+<include file="Public:header" />
+<style>
+    tr,td{
+        vertical-align: middle!important;
+    }
+</style>
+<form class="form-inline definewidth m20" action="<{:U('System/admin_list')}>" method="post">
+  <input type="text" name="name" id="menuname"class="abc input-default" placeholder="姓名" value="">
+  <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增用户</button>
+</form>
+
+<table class="table table-bordered table-hover tab_center definewidth m10">
+  <tr>
+    <th>编号</th>
+    <th>用户名</th>
+    <th>渠道名称</th>
+    <th>姓名</th>
+    <th>手机号码</th>
+    <th>邮箱</th>
+    <th>城市</th>
+    <th>目录权限</th>
+    <th>创建人</th>
+    <!--<th>注册时间</th>
+    <th>注册IP</th>
+    <th>上次登录时间</th>
+    <th>上次登录IP</th>-->
+    <th>操作</th>
+  </tr>
+  <volist name="data" id="vo">
+    <tr>
+      <td><{$i}></td>
+      <td><{$vo.username}></td>
+      <td><{$vo.nickname}></td>
+      <td><{$vo.name}></td>
+      <td><{$vo.mobile}></td>
+      <td><{$vo.mail}></td>
+      <td><{$vo.territory}></td>
+      <td><{$vo.rank}></td>
+      <td><{$vo.founder}></td>
+      <!--<td><{$vo.register_time}></td>
+      <td><{$vo.register_ip}></td>
+      <td><{$vo.enter_time}></td>
+      <td><{$vo.enter_ip}></td>-->
+      <td>
+        <a href="<{:U('System/admin_grouping',array('id'=>$vo['id']))}>">修改</a> <span style="font-size:16px;">|</span>
+        <a href="<{:U('System/delete_admin',array('id'=>$vo['id'],'status'=>$vo['status']))}>" onclick="return menu_delete('<{$vo.username}>','<{$vo.status}>')"><if condition="$vo['status'] eq '1'">已启用<else/>已禁用</if></a>
+      </td>
+    </tr>
+  </volist>
+
+</table>
+
+<div class="inline page"><!-- pull-right-->
+  <a href="<if condition="$page_number['page'] eq 1 ">javascript:;<else /><{:U('System/admin_list',array('page'=>$page_number['page']-1))}></if>">«</a>
+  <if condition="($page_number['count'] gt 10) AND ($page_number['page'] gt 5) ">
+    <a href="javascript:;">...</a>
+  </if>
+  <for start="1" end="$page_number['count']" comparison="elt">
+
+    <if condition="($i gt $page_number['page'] - 5) AND (($i lt $page_number['page'] + 5) OR (($page_number['page'] elt 5) AND ($i elt 10)))">
+      <if condition="$i eq $page_number['page'] ">
+        <a href="javascript:;" class="current"><{$i}></a>
+        <else />
+        <a href="<{:U('System/admin_list',array('page'=>$i))}>"><{$i}></a>
+        <!--<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>-->
+      </if>
+      <else />
+    </if>
+
+  </for>
+  <if condition="($page_number['count'] gt 10) AND ($page_number['page'] elt $page_number['count'] - 5) ">
+    <a href="javascript:;">...</a>
+  </if>
+  <a href="<if condition="$page_number['page'] eq $page_number['count'] ">javascript:;<else /><{:U('System/admin_list',array('page'=>$page_number['page']+1))}></if>">»</a>
+
+</div>
+
+<script>
+  $(function () {
+
+    $('#addnew').click(function(){
+      window.location.href="<{:U('System/addition_admin')}>";
+    });
+
+  });
+
+
+
+
+
+  function menu_delete(text,btn){
+//    var state = $(btn).find('span.text').html();
+    if(btn === '1'){
+      if(confirm("是否要禁用该管理员（"+text+"）么！")){
+//        $(btn).find('span.ico').removeClass('am-icon-toggle-on').addClass('am-icon-toggle-off');
+//          $(btn).find('span.text').html('启用');
+        return true;
+      }else{
+        return false;
+      }
+    }else{
+      if(confirm("是否要启用该管理员（"+text+"）么！")){
+//        $(btn).find('span.ico').removeClass('am-icon-toggle-on').addClass('am-icon-toggle-off');
+//        $(btn).find('span.text').html('禁用');
+        return true;
+      }else{
+        return false;
+      }
+    }
+
+  }
+
+</script>
+
+
+
+<include file="Public:footer" />

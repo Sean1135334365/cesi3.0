@@ -1,0 +1,331 @@
+*{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-progress-appearance: none;
+	appearance: none;
+}
+body{
+	padding-bottom: 4.2rem;
+	height: 47rem;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-track {
+    background:#ddd;
+    opacity:0.7;
+    -webkit-box-shadow:rgba(50,50,50,0.3);
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius:3px;
+    background:rgba(68,182,174,0.3);
+    -webkit-box-shadow:rgba(68,182,174,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background-color:rgba(68,182,174,0.5);
+}
+::-webkit-scrollbar-track-piece{
+    background:#F3F3F3;
+    opacity:0.5;
+    -webkit-box-shadow:rgba(50,50,50,0.5);
+    border-radius:3px;
+}
+
+header,#top,#content{
+	width: 100%;
+	margin: 0rem auto 0;
+	padding: 0rem 0rem;
+}
+header hr{
+	width: 92%;
+	margin:0 auto;
+	border-top: 1px solid #eee;
+}
+header img{
+	float: left;
+    width: 3rem;
+    margin-top: 1.3rem;
+    margin-right: 1.3rem;
+    margin-left: 4%;
+}
+header h3{
+	color: #333;
+	margin-left: 0.1rem;
+	font-size: 16px;
+	padding-left: 1rem;
+	padding: 1rem 4%;
+}
+header h3 span{
+	color: #999;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+header div p{
+	padding: 0.43rem 0;
+}
+header div .yl{
+	font-size: 14px;
+	color: #333;
+	padding-top: 1.5rem;
+}
+header div .yl2{
+	font-size: 14px;
+	color: #df3131;
+}
+header div .yl3{
+	font-size: 14px;
+	color: #333;
+	padding-bottom:1.5rem;
+}
+.outer{
+	overflow-x: scroll;
+	width: 100%;
+	height: 6.5rem;
+}
+.inner{
+	height: 6.5rem;
+	width: auto;
+	padding-left: 4%;
+	white-space: nowrap;
+	display: inline-block;
+}
+.line{
+	height: 0.625rem;
+	background-color: #f3f3f3;
+}
+#content h3{
+	color: rgb(128,128,128);
+	font-weight: normal;
+	font-size: 14px;
+	padding: 1rem;
+	background-color: #fafafa;
+	color: #7f7f7f;
+	line-height: 1.13rem;
+}
+#content img{
+	float: left;
+	width:1.05rem;
+	height: 1.15rem;
+	margin-top: 0.9rem;
+    margin-left: 4%;
+}
+#content p{
+	display: inline-block;
+	color: #666;
+	padding-top: 1.5rem;
+	font-size: 14px;
+	text-align: center;
+}
+#content p:last-child{
+	padding-right: 1rem;
+}
+#content p span{
+	color:rgb(205,175,125);
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	background-color: rgb(255,251,245);
+	border: 0.1rem solid rgb(240,226,202);
+	border-radius: 50%;
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.9rem; 
+	box-sizing: border-box;
+}
+.shortcut{
+	width: 0.98rem;
+	height: 0;
+	border-bottom:0.18rem dashed rgb(234,228,199);
+	display: inline-block;
+	vertical-align: top;
+    margin-top: 2.4rem;
+}
+#content #mask{
+	width: 100vw;
+    height: 6.5rem;
+    position: absolute;
+    left: 0;
+    padding: 0!important;
+    pointer-events: none;
+	top: 12.3rem;
+	max-width: 100vw;
+}
+#content #mask img{
+	float: left;
+	height: 100%;
+	margin: 0;
+}
+#content #mask img:last-child{
+	float: right;
+}
+/* background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+background-image: linear-gradient(to bottom, #0088cc, #0044cc); */
+.short{
+	background-color: #fafafa;
+	height: 3.6rem;
+}
+.short>ul{
+	width: 100%;
+	height: 3.6rem;
+}
+.short>ul>li{
+	width: 33.3%;
+	text-align: center;
+	line-height: 3.6rem;
+	color: #666;
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+	border-bottom: 1px solid #eee;
+	pointer-events: none;
+	float: left;
+}
+.short>ul>li:first-child{
+	color: #CDAF7D;
+	border-color: #CDAF7D;
+}
+.short_content{
+	width: 100%;
+	text-align: left;
+}
+#shade{
+	height: 0.35rem;
+}
+#shade img{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+.toggle{
+	width: 92%;
+	margin: 0rem auto;	
+	border-bottom: 1px dashed #E9E9E9;
+	overflow: hidden;
+	transition: all 0.25s linear;
+	box-sizing: border-box;
+	height: 3.5rem;
+	line-height: 4rem;
+}
+.toggle hr{
+	margin: 0rem;
+	border-top: 1px solid #eee;
+}
+.toggle img{
+	height: 0.55rem;
+	float: right;
+	transform: rotateZ(0deg);
+	-webkit-transform: rotateZ(0deg);
+	-moz-transform: rotateZ(0deg);
+	-ms-transform: rotateZ(0deg);
+	-o-transform: rotateZ(0deg);
+	margin-top: 1.8rem;
+}
+.toggle p{
+	display: inline-block;
+	color: #999;	
+	font-size: 0.9rem;
+}
+.toggle>span{
+	display: inline-block;
+	font-size: 15px;
+	color: #666;
+	float: right;
+}
+.toggle span.con{
+	padding-left: 0;
+	color: #999;
+	font-size: 14px;
+	display: block;
+	background-color: #fafafa;
+	width: 92%;
+	padding: 0.55rem 4%;
+	text-align: left;
+	line-height: 2rem;
+	text-indent: 14%;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 4.2rem;
+	width: 100%;
+	border-top: 1px solid #eee;
+	background-color: #fff;
+	box-sizing: border-box;
+	z-index: 9;
+}
+footer .short{
+	width: 80%;
+	height: 2.8rem;
+	margin:0.7rem auto;
+	color: #fff;
+	background-color: #dfc190;
+	border-radius: 4rem;
+	display: block;
+	border:none;
+	line-height: 100%;
+	font-size: 18px;
+	font-weight: bold;
+}
+.kz{
+	padding-left: 7rem;
+}
+/* swiper引用框架 */
+	body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: auto;
+    }
+    .swiper-slide {
+    	width: 100%;
+        text-align: center;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+		padding-bottom: 4.2rem;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets>li.swiper-pagination-bullet{
+	    width: 33%;
+	    border: none;
+	    border-radius: 0;
+	    height: 3.6rem;	
+	    margin: 0;
+	    background: transparent;
+	    opacity: 0;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets>li.swiper-pagination-bullet:active{
+    	background: #fff;
+    	opacity: 0.2;
+    }
+    .swiper-container-horizontal>div.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    	top: 0rem;
+    	height: 3.6rem;
+    	left: 0;
+    }
+    div.swiper-container{
+    	padding-top:4.05rem;
+    	position: absolute;
+    }

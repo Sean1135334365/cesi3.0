@@ -1,0 +1,68 @@
+<include file="Public:header" />
+
+
+<form action="<{:U('System/catalogue',array('id'=>$list['id']))}>" method="post" class="definewidth m20">
+  <input type="hidden" name="id" value="<{$list.id}>" />
+  <table class="table table-bordered table-hover m10">
+    <tr>
+      <td class="tableleft">目录类别</td>
+      <td>
+        <select name="sort">
+          <option value="">--请选择类别--</option>
+          <option value="1" <if condition="$list['sort'] eq 1 ">selected="selected"</if>>系统</option>
+          <option value="2" <if condition="$list['sort'] eq 2 ">selected="selected"</if>>业务</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td width="10%" class="tableleft">目录级别</td>
+      <td>
+        <select name="tier">
+          <option value="">--请选择目录级别--</option>
+          <option value="1" <if condition="($list['superior'] eq 0) AND ($list['id'] neq '') ">selected="selected"</if>>一级菜单</option>
+          <option value="2" <if condition="$list['superior'] neq 0 ">selected="selected"</if>>二级菜单</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft">目录名称</td>
+      <td><input type="text" name="menu" value="<{$list['menu']}>"/></td>
+    </tr>
+    <tr>
+      <td class="tableleft">所属目录</td>
+      <td>
+        <select name="superior">
+          <option value="">--请选择上级目录--</option>
+          <volist name="supe" id="vo">
+            <option value="<{$vo.id}>" <if condition="$list['superior'] eq $vo['id']">selected="selected"</if>><{$vo.menu}></option>
+          </volist>
+        </select>
+        &nbsp;&nbsp;<span style="font-size:12px;color:#c3c3c3;">注：一级目录不需要选择</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft">控制器名称</td>
+      <td>
+        <input type="text" name="act" value="<if condition="$list['superior'] eq '0' or $list['superior'] eq ''"><{$list['crt']}><else/><{$list['act']}></if>"/>&nbsp;&nbsp;
+        <span style="font-size:12px;color:#c3c3c3;">注：新建目录需自定义名称（必须为英文字母或下划线，一级目录为controller，二级目录为action）</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft">目录状态</td>
+      <td>
+        <input type="radio" name="state" value="1" <if condition="$list['state'] eq '1' ">checked</if>/> 启用
+        <input type="radio" name="state" value="0" <if condition="$list['state'] eq '0' ">checked</if>/> 禁用
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft"></td>
+      <td>
+        <button type="submit" class="btn btn-primary" type="button">保存</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+
+<include file="Public:footer" />

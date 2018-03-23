@@ -1,0 +1,535 @@
+
+
+<include file="Public:header" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/assets/css/modularity_style.css" />
+
+<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+
+<!--<form class="form-inline definewidth m20" action="<{:U('Product/product_list')}>" method="get">-->
+<!--条件查询：-->
+<!--<input type="text" name="name" id="name"class="abc input-default" placeholder="产品名称/产品代码" value="">&nbsp;&nbsp;-->
+<!--<button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <a href="<{:U('Product/product_redact')}>"><button type="button" class="btn btn-success" id="addnew">新增产品</button></a>-->
+<!--</form>-->
+
+
+<style>
+    @media only screen and (max-width:1280px) and (min-width:968px){#table2{height: 500px;}}
+    @media screen and (max-width:968px){.table2{height: auto;}}
+</style>
+
+
+<div class="container">
+    <div class="content">
+        <ul>
+            <div id="architecture">
+                <li>
+                    <div class="li_title">建筑类型</div>
+                    <div class="check_btn">
+                        <!--<form class="form-inline definewidth m10" action="<{:U('Product/parameter_list')}>" method="get">-->
+                            <!--条件查询：-->
+                            <!--<input type="text" name="name" id="name" class="abc input-default" placeholder="产品名称/产品代码" value="">&nbsp;&nbsp;-->
+                            <!--<button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;-->
+                            <button type="button" class="btn btn-success" id="addnew">添加</button>
+                            <input type="hidden" value="1"/>
+                        <!--</form>-->
+                    </div>
+                    <table class="table table-bordered table-hover tab_center definewidth m10">
+                        <tr>
+                            <th>编号</th>
+                            <th>名称</th>
+                            <th>编辑</th>
+                        </tr>
+                        <volist name="ht_data" id="vo">
+                            <tr>
+                                <td><{$i}></td>
+                                <td><span class="qwer"><{$vo.name}></span></td>
+                                <td>
+                                    <a href="javascript:;" class="save">编辑</a>
+                                    <input type="hidden" value="<{$vo.id}>"/>
+                                    <input type="hidden" value="1"/>
+                                    <span>|</span>
+                                    <a href="javascript:;" class="delete" tid="<{$vo.id}>" typ="house_type">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                    <div class="inline page"><!-- pull-right-->
+                        <if condition="$ht_page_number['page'] eq 1 "><a href="javascript:;">«</a></if>
+                        <if condition="$ht_page_number['page'] neq 1 "><a href="javascript:;" class="ajax_page" page="<{$ht_page_number['page']-1}>" dj="1">«</a></if>
+                        <if condition="($ht_page_number['count'] gt 10) AND ($ht_page_number['page'] gt 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <for start="1" end="$ht_page_number['count']" comparison="elt">
+                            <if condition="($i gt $ht_page_number['page'] - 3) AND (($i lt $ht_page_number['page'] + 3) OR (($ht_page_number['page'] elt 3) AND ($i elt 10)))">
+                                <if condition="$i eq $ht_page_number['page'] ">
+                                    <a href="javascript:;" class="current"><{$i}></a>
+                                    <else />
+                                    <a href="javascript:;" class="ajax_page" page="<{$i}>" dj="1"><{$i}></a>
+                                </if>
+                                <else />
+                            </if>
+                        </for>
+                        <if condition="($ht_page_number['count'] gt 6) AND ($ht_page_number['page'] elt $ht_page_number['count'] - 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <if condition="$ht_page_number['page'] eq $ht_page_number['count'] "><a href="javascript:;">»</a></if>
+                        <if condition="$ht_page_number['page'] lt $ht_page_number['count'] "><a href="javascript:;" class="ajax_page" page="<{$ht_page_number['page']+1}>" dj="1">»</a></if>
+                    </div>
+                    
+                    <input type="hidden" value="" class="hidden">
+                </li>
+            </div>
+
+            <div id="loan">
+                <li id="table2">
+                    <div class="li_title">贷款类型</div>
+                    <div class="check_btn">
+                        <!--<form class="form-inline definewidth m10" action="<{:U('Product/product_list')}>" method="get">-->
+                            <!--条件查询：-->
+                            <!--<input type="text" name="name" id="name2" class="abc input-default" placeholder="产品名称/产品代码" value="">&nbsp;&nbsp;-->
+                            <!--<button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;-->
+                            <button type="button" class="btn btn-success" id="addnew2">添加</button>
+                            <input type="hidden" value="2"/>
+                        <!--</form>-->
+                    </div>
+                    <table class="table table-bordered table-hover tab_center definewidth m10">
+                        <tr>
+                            <th>编号</th>
+                            <th>名称</th>
+                            <th>编辑</th>
+                        </tr>
+                        <volist name="lt_data" id="vo">
+                            <tr>
+                                <td><{$i}></td>
+                                <td><span class="qwer"><{$vo.name}></span></td>
+                                <td>
+                                    <a href="javascript:;" class="save">编辑</a>
+                                    <input type="hidden" value="<{$vo.id}>"/>
+                                    <input type="hidden" value="2"/>
+                                    <span>|</span>
+                                    <a href="javascript:;" class="delete" tid="<{$vo.id}>" typ="loans_type">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                    <!--                <div class="inline page">&lt;!&ndash; pull-right&ndash;&gt;
+                                        <a href="<if condition="$lt_page_number['page'] eq 1 ">javascript:;<else /><{:U('Product/parameter_list',array('page'=>$lt_page_number['page']-1))}></if>">«</a>
+                                        <if condition="($lt_page_number['count'] gt 10) AND ($lt_page_number['page'] gt 5) ">
+                                            <a href="javascript:;">...</a>
+                                        </if>
+                                        <for start="1" end="$lt_page_number['count']" comparison="elt">
+                                            <if condition="($i gt $lt_page_number['page'] - 5) AND (($i lt $lt_page_number['page'] + 5) OR (($lt_page_number['page'] elt 5) AND ($i elt 10)))">
+                                                <if condition="$i eq $lt_page_number['page'] ">
+                                                    <a href="javascript:;" class="current"><{$i}></a>
+                                                    <else />
+                                                    <a href="<{:U('Product/parameter_list',array('page'=>$i))}>"><{$i}></a>
+                                                    &lt;!&ndash;<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>&ndash;&gt;
+                                                </if>
+                                                <else />
+                                            </if>
+                                        </for>
+                                        <if condition="($lt_page_number['count'] gt 10) AND ($lt_page_number['page'] elt $lt_page_number['count'] - 5) ">
+                                            <a href="javascript:;">...</a>
+                                        </if>
+                                        <a href="<if condition="$lt_page_number['page'] eq $lt_page_number['count'] ">javascript:;<else /><{:U('Product/parameter_list',array('page'=>$lt_page_number['page']+1))}></if>">»</a>
+                                    </div>-->
+                    <div class="inline page"><!-- pull-right-->
+                        <if condition="$lt_page_number['page'] eq 1 "><a href="javascript:;">«</a></if>
+                        <if condition="$lt_page_number['page'] gt 1 "><a href="javascript:;" class="ajax_page" page="<{$lt_page_number['page']-1}>" s_id="<{$id}>" dj="2">«</a></if>
+                        <!--<a href="<if condition="$t_page_number['page'] eq 1 ">javascript:;<else /><{:U('Product/area_list_page',array('page'=>$t_page_number['page']-1,'id'=>$id,'dj'=>'1'))}></if>">«</a>-->
+                        <if condition="($lt_page_number['count'] gt 10) AND ($lt_page_number['page'] gt 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <for start="1" end="$lt_page_number['count']" comparison="elt">
+                            <if condition="($i gt $lt_page_number['page'] - 3) AND (($i lt $lt_page_number['page'] + 3) OR (($lt_page_number['page'] elt 3) AND ($i elt 10)))">
+                                <if condition="$i eq $lt_page_number['page'] ">
+                                    <a href="javascript:;" class="current"><{$i}></a>
+                                    <else />
+                                    <a href="javascript:;" class="ajax_page" page="<{$i}>" s_id="<{$id}>" dj="2"><{$i}></a>
+                                    <!--<a href="<{:U('Product/area_list_page',array('page'=>$i,'id'=>$id,'dj'=>'1'))}>"><{$i}></a>-->
+                                    <!--<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>-->
+                                </if>
+                                <else />
+                            </if>
+                        </for>
+                        <if condition="$lt_page_number['page'] eq $lt_page_number['count'] "><a href="javascript:;">»</a></if>
+                        <if condition="$lt_page_number['page'] lt $lt_page_number['count'] "><a href="javascript:;" class="ajax_page" page="<{$lt_page_number['page']+1}>" dj="2">»</a></if>
+
+                        <!--<a href="<if condition="$t_page_number['page'] eq $t_page_number['count'] ">javascript:;<else /><{:U('Product/area_list_page',array('page'=>$t_page_number['page']+1,'id'=>$id,'dj'=>'1'))}></if>">»</a>-->
+                    </div>
+                    <!--<input type="hidden" value="" class="hidden">-->
+                </li>
+            </div>
+
+            <div id="repayments">
+                <li>
+                    <div class="li_title">还款方式</div>
+                    <div class="check_btn">
+                        <!--<form class="form-inline definewidth m10" action="<{:U('Product/product_list')}>" method="get">-->
+                            <!--条件查询：-->
+                            <!--<input type="text" name="name" id="name3" class="abc input-default" placeholder="产品名称/产品代码" value="">&nbsp;&nbsp;-->
+                            <!--<button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;-->
+                            <button type="button" class="btn btn-success" id="addnew3">添加</button>
+                            <input type="hidden" value="3"/>
+                        <!--</form>-->
+                    </div>
+                    <table class="table table-bordered table-hover tab_center definewidth m10">
+                        <tr>
+                            <th>编号</th>
+                            <th>名称</th>
+                            <th>编辑</th>
+                        </tr>
+                        <volist name="rp_data" id="vo">
+                            <tr>
+                                <td><{$i}></td>
+                                <td><span class="qwer"><{$vo.name}></span></td>
+                                <td>
+                                    <a href="javascript:;" class="save">编辑</a>
+                                    <input type="hidden" value="<{$vo.id}>"/>
+                                    <input type="hidden" value="3"/>
+                                    <span>|</span>
+                                    <a href="javascript:;" class="delete" tid="<{$vo.id}>" typ="repayment_pattern">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                    <div class="inline page"><!-- pull-right-->
+                        <if condition="$rp_page_number['page'] eq 1 "><a href="javascript:;">«</a></if>
+                        <if condition="$rp_page_number['page'] neq 1 "><a href="javascript:;" class="ajax_page" page="<{$rp_page_number['page']-1}>" dj="3">«</a></if>
+                        <if condition="($rp_page_number['count'] gt 10) AND ($rp_page_number['page'] gt 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <for start="1" end="$rp_page_number['count']" comparison="elt">
+                            <if condition="($i gt $rp_page_number['page'] - 3) AND (($i lt $rp_page_number['page'] + 3) OR (($rp_page_number['page'] elt 3) AND ($i elt 10)))">
+                                <if condition="$i eq $rp_page_number['page'] ">
+                                    <a href="javascript:;" class="current"><{$i}></a>
+                                    <else />
+                                    <a href="javascript:;" class="ajax_page" page="<{$i}>" dj="3"><{$i}></a>
+                                </if>
+                                <else />
+                            </if>
+                        </for>
+                        <if condition="($rp_page_number['count'] gt 6) AND ($rp_page_number['page'] elt $rp_page_number['count'] - 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <if condition="$rp_page_number['page'] eq $rp_page_number['count'] "><a href="javascript:;">»</a></if>
+                        <if condition="$rp_page_number['page'] lt $rp_page_number['count'] "><a href="javascript:;" class="ajax_page" page="<{$rp_page_number['page']+1}>" dj="3">»</a></if>
+                    </div>
+                    <!--<input type="hidden" value="" class="hidden">-->
+                </li>
+            </div>
+            <div id="usury">
+                <li>
+                    <div class="li_title">贷款期限</div>
+                    <div class="check_btn">
+                        <!--<form class="form-inline definewidth m10" action="<{:U('Product/parameter_list')}>" method="get">-->
+                        <!--条件查询：-->
+                        <!--<input type="text" name="name" id="name" class="abc input-default" placeholder="产品名称/产品代码" value="">&nbsp;&nbsp;-->
+                        <!--<button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;-->
+                        <button type="button" class="btn btn-success" id="addnew4">添加</button>
+                        <input type="hidden" value="4"/>
+                        <!--</form>-->
+                    </div>
+                    <table class="table table-bordered table-hover tab_center definewidth m10">
+                        <tr>
+                            <th>编号</th>
+                            <th>月份</th>
+                            <th>编辑</th>
+                        </tr>
+                        <volist name="mt_data" id="vo">
+                            <tr>
+                                <td><{$i}></td>
+                                <td>
+                                    <if condition="$vo['month'] gt 12"><span class="qwer"><{$vo['month']/12}></span>年<else/><span class="qwer"><{$vo.month}></span>个月</if>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="save">编辑</a>
+                                    <input type="hidden" value="<{$vo.id}>"/>
+                                    <input type="hidden" value="4"/>
+                                    <span>|</span>
+                                    <a href="javascript:;" class="delete" tid="<{$vo.id}>" typ="month">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                    <div class="inline page"><!-- pull-right-->
+                        <if condition="$mt_page_number['page'] eq 1 "><a href="javascript:;">«</a></if>
+                        <if condition="$mt_page_number['page'] neq 1 "><a href="javascript:;" class="ajax_page" page="<{$mt_page_number['page']-1}>" dj="4">«</a></if>
+                        <if condition="($mt_page_number['count'] gt 10) AND ($mt_page_number['page'] gt 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <for start="1" end="$mt_page_number['count']" comparison="elt">
+                            <if condition="($i gt $mt_page_number['page'] - 3) AND (($i lt $mt_page_number['page'] + 3) OR (($mt_page_number['page'] elt 3) AND ($i elt 10)))">
+                                <if condition="$i eq $mt_page_number['page'] ">
+                                    <a href="javascript:;" class="current"><{$i}></a>
+                                    <else />
+                                    <a href="javascript:;" class="ajax_page" page="<{$i}>" dj="4"><{$i}></a>
+                                </if>
+                                <else />
+                            </if>
+                        </for>
+                        <if condition="($mt_page_number['count'] gt 6) AND ($mt_page_number['page'] elt $mt_page_number['count'] - 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <if condition="$mt_page_number['page'] eq $mt_page_number['count'] "><a href="javascript:;">»</a></if>
+                        <if condition="$mt_page_number['page'] lt $mt_page_number['count'] "><a href="javascript:;" class="ajax_page" page="<{$mt_page_number['page']+1}>" dj="4">»</a></if>
+                    </div>
+
+                    <input type="hidden" value="" class="hidden">
+                </li>
+            </div>
+            <!--<div id="source">
+                <li>
+                    <div class="li_title">金融机构</div>
+                    <div class="check_btn">
+                        &lt;!&ndash;<form class="form-inline definewidth m10" action="<{:U('Product/product_list')}>" method="get">&ndash;&gt;
+                        &lt;!&ndash;条件查询：&ndash;&gt;
+                        &lt;!&ndash;<input type="text" name="name" id="name3" class="abc input-default" placeholder="产品名称/产品代码" value="">&nbsp;&nbsp;&ndash;&gt;
+                        &lt;!&ndash;<button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;&ndash;&gt;
+                        <button type="button" class="btn btn-success" id="addnew4">添加</button>
+                        <input type="hidden" value="4"/>
+                        &lt;!&ndash;</form>&ndash;&gt;
+                    </div>
+                    <table class="table table-bordered table-hover tab_center definewidth m10">
+                        <tr>
+                            <th>编号</th>
+                            <th>名称</th>
+                            <th>编辑</th>
+                        </tr>
+                        <volist name="so_data" id="vo">
+                            <tr>
+                                <td><{$i}></td>
+                                <td><{$vo.name}></td>
+                                <td>
+                                    <a href="javascript:;" class="save">编辑</a>
+                                    <input type="hidden" value="<{$vo.id}>"/>
+                                    <input type="hidden" value="4"/>
+                                    <span>|</span>
+                                    <a href="javascript:;" class="delete" tid="<{$vo.id}>" typ="repayment_pattern">删除</a>
+                                </td>
+                            </tr>
+                        </volist>
+                    </table>
+                    <div class="inline page">&lt;!&ndash; pull-right&ndash;&gt;
+                        <if condition="$so_page_number['page'] eq 1 "><a href="javascript:;">«</a></if>
+                        <if condition="$so_page_number['page'] neq 1 "><a href="javascript:;" class="ajax_page" page="<{$so_page_number['page']-1}>" dj="4">«</a></if>
+                        <if condition="($so_page_number['count'] gt 10) AND ($so_page_number['page'] gt 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <for start="1" end="$so_page_number['count']" comparison="elt">
+                            <if condition="($i gt $so_page_number['page'] - 3) AND (($i lt $so_page_number['page'] + 3) OR (($so_page_number['page'] elt 3) AND ($i elt 10)))">
+                                <if condition="$i eq $so_page_number['page'] ">
+                                    <a href="javascript:;" class="current"><{$i}></a>
+                                    <else />
+                                    <a href="javascript:;" class="ajax_page" page="<{$i}>" dj="4"><{$i}></a>
+                                </if>
+                                <else />
+                            </if>
+                        </for>
+                        <if condition="($so_page_number['count'] gt 6) AND ($so_page_number['page'] elt $so_page_number['count'] - 3) ">
+                            <a href="javascript:;">...</a>
+                        </if>
+                        <if condition="$so_page_number['page'] eq $so_page_number['count'] "><a href="javascript:;">»</a></if>
+                        <if condition="$so_page_number['page'] lt $so_page_number['count'] "><a href="javascript:;" class="ajax_page" page="<{$so_page_number['page']+1}>" dj="4">»</a></if>
+                    </div>
+                    &lt;!&ndash;<input type="hidden" value="" class="hidden">&ndash;&gt;
+                </li>
+            </div>-->
+        </ul>
+
+    </div>
+</div>
+<script>
+    $('.hidden').on('change',function(){
+           var msg=$(this).val();
+           var arr=msg.split(',');
+           console.log(msg,1);
+           console.log(arr);
+           /*修改地址*/
+//           $.post("http://cesi3.0.com/index.php/Admin/Product/parameter_list_page.html",{dj:arr[0],page:arr[1]},function(res){
+           $.post("<{:U('Admin/Product/parameter_list_page')}>",{dj:arr[0],page:arr[1]},function(res){
+               if(arr[0] === '1'){
+                   $("#architecture").html('');
+                   $("#architecture").html(res);
+               }else if(arr[0] === '2'){
+                   //$("#loan").html('');
+                   $("#loan").html(res);
+               }else if(arr[0] === '3'){
+                   //$("#repayments").html('');
+                   $("#repayments").html(res);
+               }else if(arr[0] === '4'){
+                   //$("#repayments").html('');
+                   $("#usury").html(res);
+               }
+           });
+       })
+    function edit_list(type){
+        if(type == 1){
+            var content = ["<{:U('Admin/Product/wechat_update',array('type'=>'1','page'=>$ht_page_number['page']))}>",'no'];
+        }else if(type == 2){
+            var content = ["<{:U('Admin/Product/wechat_update',array('type'=>'2','page'=>$ht_page_number['page']))}>",'no'];
+        }else if(type == 3){
+            var content = ["<{:U('Admin/Product/wechat_update',array('type'=>'3','page'=>$ht_page_number['page']))}>",'no'];
+        }else if(type == 4){
+            var content = ["<{:U('Admin/Product/wechat_update',array('type'=>'4','page'=>$ht_page_number['page']))}>",'no'];
+        }
+        layer.open({
+            type: 2,
+            title: '添加',
+            area: ['300px', '200px'],
+            shade: 0.8,
+            closeBtn: 0,
+            shadeClose: true,
+            //content: ["<{:U('Admin/Product/wechat_update/type/"+type+"')}>",'no']
+           content: content
+//           content: ["<{:U('Admin/Product/wechat_update',array('type'=>'1','page'=>$ht_page_number['page']))}>",'no']
+            /*end: function () {
+                location.reload();
+            }*/
+
+        })
+    }
+    $(function(){
+        $(".btn-success").unbind();
+        $(".btn-success").click(function(){
+            var type= $(this).next().val();
+                edit_list(type);
+        })
+
+    })
+
+    $(function(){
+        $('.ajax_page').click(function(){
+            var page = $(this).attr('page');
+            var dj = $(this).attr('dj');
+            $.post("<{:U('Admin/Product/parameter_list_page')}>",{page:page,dj:dj},function(res){
+                if(dj === '1'){
+                    $("#architecture").html(res);
+                }else if(dj === '2'){
+                    $("#loan").html(res);
+                }else if(dj === '3'){
+                    $("#repayments").html(res);
+                }else if(dj === '4'){
+                    $("#usury").html(res);
+                }
+
+            });
+        });
+    });
+
+    $(function(){
+        $(document).on('click','.delete',function(){
+            var a = $(this);
+            var tid = a.attr('tid');
+            var typ = a.attr('typ');
+            var text = a.parent().parent().find('td').eq(1).text();
+            layer.confirm('您确定要删除('+text+')吗？', {
+                btn: ['是','否'] //按钮
+            }, function(){
+                $.post("<{:U('Product/parameter_delete')}>",{tid:tid,typ:typ},function(res){
+                    if(res.status === 1){
+                        layer.msg(res.info,{icon:1,time:1000});
+//                        alert(res.info);
+                        a.parent().parent().remove();
+                    }else{
+                        layer.msg(res.info,{icon:0,time:1000});
+//                        alert(res.info);
+                    }
+                });
+            }, function(){
+            });
+        });
+        });
+//    });
+    function save(obj){
+        if($(obj).parent().prev().find('input').attr('bol')==="true"){
+            return false;
+        }else{
+            var type = $(obj).next().next().val();
+            var value = $(obj).parent().prev().children().text();
+//                alert(value);
+
+//            console.log();
+            var id= $(obj).next().val();
+            $(obj).parent().prev().children().html('<input type="text" name="name" bol="true" value='+value+' style="width: 100px;text-align:center;" class="focal" />');
+            $(".focal").focus();
+            $(".focal").blur(function(){
+                var name = $(this).val();
+                var year = $(this).parent().parent().text();
+                var _this=$(this);
+//                alert(name);
+//                alert(type);
+//                alert(value);
+//                alert(year);
+                console.log(year);
+                if(name != ''){
+                    if(type == 4){
+                        var numbe=Number(name);
+
+                        if(numbe>0) {
+                            if (numbe >= 12) {
+                                if (numbe % 12 != 0) {
+                                    alert("请输入正确数字,超过12个月以12的倍数填写！");
+                                    _this.parent().text(value);
+                                    return false;
+                                }
+                            }
+                        }else{
+                            alert("请输入正确整数");
+                            _this.parent().text(value);
+                            return false;
+                        }
+                    }
+                    layer.confirm('您确定修改吗？', {
+                        btn: ['是','否'] //按钮
+                    }, function(){
+                        $.post("<{:U('Admin/Product/uplode')}>",{name:name,id:id,type:type,year:year},function(res) {
+                            if(res['status']==1){
+                                layer.msg(res['msg'],{icon:1,time:1000});
+                                var name2 = _this.val();
+                                _this.parent().text(name2);
+                                $(this).parent().prev().find('input').attr('bol','false');
+                                //                                    location.reload();
+                            }else if(res['status']==2){
+                                layer.msg(res['msg'],{icon:0,time:1000});
+                                _this.parent().text(value);
+                                _this.parent().prev().find('input').attr('bol','false');
+                            }else{
+                                layer.msg(res['msg'],{icon:0,time:1000});
+                                _this.parent().text(name);
+                                _this.parent().prev().find('input').attr('bol','false');
+                            }
+                        },'json');
+                    }, function() {
+                        _this.parent().text(value);
+                    });
+                }else{
+                    layer.msg('不能设置为空',{icon:0,time:1000});
+                    _this.parent().text(value);
+                }
+            });
+        }
+    }
+    $(window).click(function(e){
+        var obj= e.target;
+        console.log(obj);
+        if(obj.className=='save'){
+
+            save(obj);
+
+
+        }
+    })
+
+
+</script>
+
+
+
+
+
+
+
+<include file="Public:footer" />

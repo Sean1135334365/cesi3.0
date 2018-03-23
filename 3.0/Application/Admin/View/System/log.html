@@ -1,0 +1,62 @@
+<include file="Public:header" />
+
+
+<table class="table table-bordered table-hover tab_center definewidth mt30">
+  <thead>
+  <tr>
+    <th>时间</th>
+    <th>操作人</th>
+    <th>操作类型</th>
+    <th>操作目录</th>
+    <th>操作页面</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <volist name="list" id="vo">
+    <tr>
+      <td><{$vo.time}></td>
+      <td><{$vo.user_name}></td>
+      <td><{$vo.cz}></td>
+      <td><{$vo.ctrname}></td>
+      <td><{$vo.act}></td>
+    </tr>
+  </volist>
+  </tbody>
+</table>
+
+
+<div class="inline page"><!-- pull-right-->
+  <a href="<if condition="$page_number['page'] eq 1 ">javascript:;<else /><{:U('System/log',array('page'=>$page_number['page']-1))}></if>">«</a>
+  <if condition="($page_number['count'] gt 10) AND ($page_number['page'] gt 5) ">
+    <a href="javascript:;">...</a>
+  </if>
+  <for start="1" end="$page_number['count']" comparison="elt">
+
+    <if condition="($i gt $page_number['page'] - 5) AND (($i lt $page_number['page'] + 5) OR (($page_number['page'] elt 5) AND ($i elt 10)))">
+      <if condition="$i eq $page_number['page'] ">
+        <a href="javascript:;" class="current"><{$i}></a>
+        <else />
+        <a href="<{:U('System/log',array('page'=>$i))}>"><{$i}></a>
+        <!--<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>-->
+      </if>
+      <else />
+    </if>
+
+  </for>
+  <if condition="($page_number['count'] gt 10) AND ($page_number['page'] elt $page_number['count'] - 5) ">
+    <a href="javascript:;">...</a>
+  </if>
+  <a href="<if condition="$page_number['page'] eq $page_number['count'] ">javascript:;<else /><{:U('System/log',array('page'=>$page_number['page']+1))}></if>">»</a>
+
+</div>
+
+
+
+
+
+
+
+
+
+<include file="Public:footer" />

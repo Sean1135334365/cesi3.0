@@ -1,0 +1,1599 @@
+[ 2017-12-26T06:11:30+08:00 ] 106.11.227.66 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+
+[ 2017-12-26T06:11:30+08:00 ] 106.11.227.84 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000411s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2017-12-26T11:05:33+08:00 ] 116.231.254.41 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+
+[ 2017-12-26T11:05:33+08:00 ] 116.231.254.41 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005126s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000395s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000429s ]
+
+[ 2017-12-26T11:05:36+08:00 ] 116.231.254.41 /index.php/Admin/Login/check_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( username='admin' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_admin_users` SET `enter_time`='1514257536',`enter_ip`='116.231.254.41' WHERE ( id=1 ) [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Login','check_code','1','张中','','{\"username\":\"admin\",\"password\":\"admin123\"}','1514257536') [ RunTime:0.0167s ]
+
+[ 2017-12-26T11:05:37+08:00 ] 116.231.254.41 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0009s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1514257537') [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000507s ]
+
+[ 2017-12-26T11:05:37+08:00 ] 116.231.254.41 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','1','张中','','','1514257537') [ RunTime:0.0134s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 261 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0004s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 261 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2017-12-26T11:05:58+08:00 ] 116.231.254.41 /index.php/Admin/Product/product_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','product_list','1','张中','','','1514257558') [ RunTime:0.0126s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 38 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 39 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `yzs_product` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: select p.*, (select `name` from yzs_product_type pt where id=p.type)as ptname,
+                (select `name` from yzs_loans_type lt where id=p.loans_type) as ltname from yzs_product p where 1 limit 0,20 [ RunTime:0.0005s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(97) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0001s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1,97) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0001s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(97) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(1) [ RunTime:0.0001s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(97) [ RunTime:0.0001s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(16,18,19,291,340,97,232,16,18,19) [ RunTime:0.0002s ]
+SQL: select GROUP_CONCAT(name) as city from yzs_territory ter where id in(18) [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 78 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 79 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/527ac73b321bc66eb5b723d07450871f.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-12-26T11:06:01+08:00 ] 116.231.254.41 /index.php/Admin/Product/parameter_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','parameter_list','1','张中','','','1514257561') [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `yzs_house_type` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_house_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_house_type` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_loans_type` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_loans_type` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_loans_type` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_repayment_pattern` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_repayment_pattern` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_repayment_pattern` LIMIT 0,10   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_month` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_month` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_month` ORDER BY CONVERT(month,SIGNED) LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 151 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 151 行.
+NOTIC: [8] Undefined variable: id /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 151 行.
+NOTIC: [8] Undefined variable: id /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 155 行.
+NOTIC: [8] Undefined variable: id /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 156 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 162 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 162 行.
+NOTIC: [8] Undefined variable: so_data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 279 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 292 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 293 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 293 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 294 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 295 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 299 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 300 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 300 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 301 行.
+NOTIC: [8] Undefined variable: so_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f8b2b318c9e423670b8eed4e32bed55.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024943s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2017-12-26T11:06:02+08:00 ] 116.231.254.41 /index.php/Admin/Product/area_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','area_list','1','张中','','','1514257562') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_territory` WHERE ( higher_up=0 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: type /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 75 行.
+NOTIC: [8] Undefined variable: t_data /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 91 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 109 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 109 行.
+NOTIC: [8] Undefined variable: id /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 109 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 110 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 111 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 116 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 117 行.
+NOTIC: [8] Undefined variable: t_page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/ad79260ce21650d137ad2e1b075413f9.php 第 117 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-12-26T11:06:03+08:00 ] 116.231.254.41 /index.php/Admin/Product/roasting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','roasting','1','张中','','','1514257563') [ RunTime:0.0134s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 1573 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 1574 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 1576 行.
+SQL: select r.id,r.p_id,p.name,p.img_roasting,p.banks,p.img_url from yzs_roasting r, yzs_product p where p.id=r.p_id and 1 [ RunTime:0.0003s ]
+SQL: select * from yzs_product where id not in(select distinct(p_id) from yzs_roasting where p_id!='0') and img_roasting != '' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 92 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 94 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 99 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 100 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 101 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 102 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 103 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 104 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 105 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 92 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 94 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 99 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 100 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 101 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 102 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 103 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 104 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 105 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 92 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 94 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 99 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 100 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 101 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 102 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 103 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 104 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 105 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined variable: product /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 131 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 158 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 158 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 159 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 162 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 175 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 178 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2017-12-26T11:06:08+08:00 ] 116.231.254.41 /index.php/Admin/User/wechat_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0006s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('User','wechat_list','1','张中','','','1514257568') [ RunTime:0.0207s ]
+NOTIC: [8] Undefined index: type /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/UserController.class.php 第 189 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/UserController.class.php 第 190 行.
+SQL: SHOW COLUMNS FROM `yzs_wxusers` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_wxusers` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_wxusers` WHERE ( 1 ) ORDER BY is_auth desc, channel_number, w_time desc LIMIT 0,20   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: wxfollow /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 121 行.
+NOTIC: [8] Undefined index: access_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 122 行.
+NOTIC: [8] Undefined index: refresh_token /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 123 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/3f21fe2b634004bc598a2ff229ee67b8.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-12-26T11:06:11+08:00 ] 116.231.254.41 /index.php/Admin/Credit/authorization_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Credit','authorization_list','1','张中','','','1514257571') [ RunTime:0.0059s ]
+NOTIC: [8] Undefined index: num /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_apply_for_authorisation` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_apply_for_authorisation` WHERE ( 1 ) ORDER BY state,time desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 77 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 78 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 79 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 80 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 81 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 82 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 83 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 91 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/37a20b83c7bfbbb7ad768942a713588c.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-12-26T11:06:12+08:00 ] 116.231.254.41 /index.php/Admin/Credit/credit_check_order_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Credit','credit_check_order_list','1','张中','','','1514257572') [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 96 行.
+NOTIC: [8] Undefined index: errmsg /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `yzs_tofindzx` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( 1 ) LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+NOTIC: [8] Undefined offset: 1 /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/CreditController.class.php 第 128 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: authorizeurl /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: acode /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [8] Undefined index: authorize /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 124 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 128 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 129 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 130 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 131 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 132 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 133 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 134 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 138 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/79185105206b2e4b655d83d7b7e9dfe4.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-12-26T11:06:17+08:00 ] 116.231.254.41 /index.php/Admin/Order/wx_apply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Order','wx_apply','1','张中','','','1514257577') [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `yzs_wx_application` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_wx_application` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0162s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/OrderController.class.php 第 180 行.
+NOTIC: [8] Undefined index: type /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/OrderController.class.php 第 196 行.
+SQL: select a.id, a.order_number, u.nickname,u.channel_number, a.loanamount, a.number,a.mobile,a.channel, a.p_power_num, a.wx_time, a.wx_state, a.banks from yzs_wx_application a left join yzs_wxusers u on a.uid = u.id where 1 order by a.wx_time desc, a.wx_state asc, a.wx_time desc limit 0,20 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: img_url /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 194 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 195 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 196 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 197 行.
+NOTIC: [8] Undefined index: ptname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+NOTIC: [8] Undefined index: all_doc_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 250 行.
+NOTIC: [8] Undefined index: wxname /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/26ec279448812fee37817c4a605b4219.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2017-12-26T11:06:28+08:00 ] 116.231.254.41 /index.php/Admin/Product/roasting.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0007s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Product','roasting','1','张中','','','1514257588') [ RunTime:0.0137s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 1573 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 1574 行.
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/ProductController.class.php 第 1576 行.
+SQL: select r.id,r.p_id,p.name,p.img_roasting,p.banks,p.img_url from yzs_roasting r, yzs_product p where p.id=r.p_id and 1 [ RunTime:0.0003s ]
+SQL: select * from yzs_product where id not in(select distinct(p_id) from yzs_roasting where p_id!='0') and img_roasting != '' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 92 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 94 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 99 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 100 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 101 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 102 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 103 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 104 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 105 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 92 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 94 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 99 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 100 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 101 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 102 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 103 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 104 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 105 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: code /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 92 行.
+NOTIC: [8] Undefined index: source /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 94 行.
+NOTIC: [8] Undefined index: city /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 99 行.
+NOTIC: [8] Undefined index: min_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 100 行.
+NOTIC: [8] Undefined index: max_money /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 101 行.
+NOTIC: [8] Undefined index: add_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 102 行.
+NOTIC: [8] Undefined index: state /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 103 行.
+NOTIC: [8] Undefined index: enter_time /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 104 行.
+NOTIC: [8] Undefined index: enter_ip /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 105 行.
+NOTIC: [8] Undefined index: delete /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined index: menu /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 110 行.
+NOTIC: [8] Undefined variable: product /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 131 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 158 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 158 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 159 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 162 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 175 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 178 行.
+NOTIC: [8] Undefined variable: page_number /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Runtime/Cache/Admin/8811399cceac5a326d276ce653a36b76.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000447s ]
+
+[ 2017-12-26T19:00:34+08:00 ] 116.231.254.41 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+
+[ 2017-12-26T19:00:34+08:00 ] 116.231.254.41 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2017-12-26T19:00:36+08:00 ] 116.231.254.41 /index.php/Admin/Login/check_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( username='will' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `yzs_admin_users` SET `enter_time`='1514286036',`enter_ip`='116.231.254.41' WHERE ( id=3 ) [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0005s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Login','check_code','3','will','','{\"username\":\"will\",\"password\":\"zw0403301x\"}','1514286036') [ RunTime:0.0056s ]
+
+[ 2017-12-26T19:00:37+08:00 ] 116.231.254.41 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','3','will','','','1514286037') [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2017-12-26T19:00:37+08:00 ] 116.231.254.41 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','admin_list','3','will','','','1514286037') [ RunTime:0.0145s ]
+NOTIC: [8] Undefined index: name /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 238 行.
+SQL: SHOW COLUMNS FROM `yzs_admin_users` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_admin_users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_admin_users` WHERE ( 1 and status='1' ) ORDER BY rank LIMIT 0,20   [ RunTime:0.0003s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 261 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0004s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yzs_territory` [ RunTime:0.0004s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 261 行.
+SQL: SELECT `name` FROM `yzs_admin_users` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `name` FROM `yzs_territory` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2017-12-26T19:00:39+08:00 ] 116.231.254.41 /index.php/Admin/System/jurisdiction_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0008s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('System','jurisdiction_list','3','will','','','1514286039') [ RunTime:0.0136s ]
+NOTIC: [8] Undefined index: rank /home/wwwroot/cesi3.0.zhiyujinrong.com/Application/Admin/Controller/SystemController.class.php 第 697 行.
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_rank` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzs_rank` WHERE ( 1 ) ORDER BY id LIMIT 0,20   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000450s ]
+
+[ 2017-12-26T19:00:40+08:00 ] 116.231.254.41 /index.php/Admin/System/jurisdiction_update/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`menu`,`sort`,`superior` FROM `yzs_catalogue` WHERE `state` = '1'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_rank` [ RunTime:0.0004s ]
+SQL: SELECT `rank` FROM `yzs_rank` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_rank_catalogue` WHERE ( r_id=1 )  [ RunTime:0.0002s ]
+SQL: SELECT `id` FROM `yzs_catalogue` WHERE `state` = '1' AND `id` IN ('1','4','5','14','15','16','19','20','23','24','26')  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+

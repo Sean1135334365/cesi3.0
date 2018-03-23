@@ -1,0 +1,129 @@
+<include file="Public:header" />
+
+
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/tooltip.css">
+<script type="text/javascript" src="__PUBLIC__/js/tooltip.js"></script>
+<style>
+    table.tab_center td, table.tab_center th, td.tab_center, th.tab_center{
+        vertical-align: middle;
+    }
+</style>
+
+
+<!--顶部-->
+<form class="form-inline definewidth m20" action="<{:U('Product/introduce')}>" method="post">
+  <input type="text" name="name" id="name" class="abc input-default" placeholder="产品名称/产品代码" value="">&nbsp;&nbsp;
+  <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <!--<a href="<{:U('Product/product_redact')}>"><button type="button" class="btn btn-success" id="addnew">新增产品</button></a>-->
+</form>
+
+<!--主体-->
+<table class="table table-bordered table-hover tab_center definewidth m10">
+  <tr>
+    <th>编号</th>
+    <th>产品图标</th>
+    <th>产品名称</th>
+    <th>类别</th>
+    <th>介绍图片</th>
+    <th>操作</th>
+  </tr>
+  <volist name="list" id="vo">
+    <tr>
+      <td><{$i}></td>
+      <td><img src="__PUBLIC__<{$vo.img_url}>" style="width:50px;cursor:pointer;"></td>
+      <td><{$vo.name}></td>
+      <!--<td><{$vo.code}></td>-->
+      <td>
+        <if condition="$vo.banks eq 1 ">银行类</if>
+        <if condition="$vo.banks eq 0 ">非银类</if>
+      </td>
+      <td><if condition="$vo['introduce_img'] neq ''"><button type="button" class="btn btn-success img_new" img_url="__PUBLIC__<{$vo.introduce_img}>">查看</button></if></td>
+      <td>
+        <a href="<{:U('Product/introduce_up',array('id'=>$vo['id']))}>">编辑</a><!-- <span style="font-size:16px;">|</span>
+        <if condition="$vo.state eq 1 "><a href="javascript:;" class="deleting" state="0" val="<{$vo['id']}>">已启用</a></if>
+        <if condition="$vo.state eq 0 "><a href="javascript:;" class="deleting" state="1" val="<{$vo['id']}>">已禁用</a></if>-->
+
+        <!--<a href="#" onclick="return menu_delete('<{$vo.delete}>','<{$vo.menu}>')">删除</a>-->
+      </td>
+    </tr>
+  </volist>
+
+</table>
+
+
+
+
+
+<!--获取授权书弹框-->
+<style>
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-track {
+    background:#ddd;
+    opacity:0.7;
+    -webkit-box-shadow:rgba(50,50,50,0.3);
+    border-radius:10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius:3px;
+    background:rgba(68,182,174,0.3);
+    -webkit-box-shadow:rgba(68,182,174,0.5);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background-color:rgba(68,182,174,0.5);
+  }
+  ::-webkit-scrollbar-track-piece{
+    background:#F3F3F3;
+    opacity:0.5;
+    -webkit-box-shadow:rgba(50,50,50,0.5);
+    border-radius:3px;
+  }
+</style>
+<div class="tooltips" id="tooltips" >
+  <div class="tlp_tle" id="tlp_tle" style="position: absolute;top: 0;">产品介绍图片<span>×</span></div>
+  <div class="tlp_text">
+    <div>
+      <img src="" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+  $(function(){
+
+    $('.img_new').click(function(){
+      var img_url=$(this).attr('img_url');
+      $('#tooltips').css({'height':'70%','overflow-y':'auto'});
+      $('#tooltips img').attr('src',img_url);
+      $('#tooltips').show();
+    });
+    $('#tooltips').on('scroll',function(){
+      var st=$('#tooltips').scrollTop();
+      $('#tlp_tle').css('top',st+'px');
+    })
+
+  });
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<include file="Public:footer" />

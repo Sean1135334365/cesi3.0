@@ -1,0 +1,249 @@
+[ 2017-12-01T14:29:28+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"227","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 14:29:27"}
+调用时间：2017-12-01 14:29:28
+[ 2017-12-01T14:29:28+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512109768' WHERE ( orderNo='227' ) [ RunTime:0.0072s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2017-12-01T14:29:51+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"227","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 14:29:51"}
+调用时间：2017-12-01 14:29:51
+[ 2017-12-01T14:29:51+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512109791' WHERE ( orderNo='227' ) [ RunTime:0.0127s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0006s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2017-12-01T14:30:00+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"230","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 14:30:00"}
+调用时间：2017-12-01 14:30:00
+[ 2017-12-01T14:30:00+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='230' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512109800' WHERE ( orderNo='230' ) [ RunTime:0.0133s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='230' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-12-01T14:30:05+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"230","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 14:30:05"}
+调用时间：2017-12-01 14:30:05
+[ 2017-12-01T14:30:05+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='230' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512109805' WHERE ( orderNo='230' ) [ RunTime:0.0153s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='230' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2017-12-01T14:30:10+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"230","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 14:30:10"}
+调用时间：2017-12-01 14:30:10
+[ 2017-12-01T14:30:10+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='230' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512109810' WHERE ( orderNo='230' ) [ RunTime:0.0134s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='230' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0107s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000509s ]
+
+[ 2017-12-01T14:30:16+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调无此订单）
+返回结果：{"orderNo":"233","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 14:30:16"}
+调用时间：2017-12-01 14:30:16
+[ 2017-12-01T14:30:16+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='233' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000491s ]
+
+[ 2017-12-01T14:30:29+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"228","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 14:30:29"}
+调用时间：2017-12-01 14:30:29
+[ 2017-12-01T14:30:29+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='228' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512109829' WHERE ( orderNo='228' ) [ RunTime:0.0126s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='228' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867 ' ) [ RunTime:0.0048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2017-12-01T15:11:44+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"228","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 15:11:43"}
+调用时间：2017-12-01 15:11:44
+[ 2017-12-01T15:11:44+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='228' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `pdfurl`='http://apitest.kcway.net/image/upload/20171201/dc0e3d42446742f497f2eb59d2368506.pdf',`pdfname`='dc0e3d42446742f497f2eb59d2368506.pdf',`pdftime`='2017-12-01 15:11:43',`errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512112304' WHERE ( orderNo='228' ) [ RunTime:0.0083s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='228' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0006s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867 ' ) [ RunTime:0.0174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000574s ]
+
+[ 2017-12-01T15:11:57+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"228","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 15:11:57"}
+调用时间：2017-12-01 15:11:57
+[ 2017-12-01T15:11:57+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='228' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `pdfurl`='http://apitest.kcway.net/image/upload/20171201/dc0e3d42446742f497f2eb59d2368506.pdf',`pdfname`='dc0e3d42446742f497f2eb59d2368506.pdf',`pdftime`='2017-12-01 15:11:57',`errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512112317' WHERE ( orderNo='228' ) [ RunTime:0.0128s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='228' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867 ' ) [ RunTime:0.0046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2017-12-01T15:12:03+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"227","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 15:12:03"}
+调用时间：2017-12-01 15:12:03
+[ 2017-12-01T15:12:03+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yzs_tofindzx` SET `pdfurl`='http://apitest.kcway.net/image/upload/20171201/dc0e3d42446742f497f2eb59d2368506.pdf',`pdfname`='dc0e3d42446742f497f2eb59d2368506.pdf',`pdftime`='2017-12-01 15:12:03',`errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512112323' WHERE ( orderNo='227' ) [ RunTime:0.0155s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='227' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2017-12-01T15:12:10+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+ERR: 快加认证（回调成功）
+返回结果：{"orderNo":"229","errmsg":"\u67e5\u8be2\u6210\u529f","pdfurl":"http:\/\/apitest.kcway.net\/image\/upload\/20171201\/dc0e3d42446742f497f2eb59d2368506.pdf","pdfname":"dc0e3d42446742f497f2eb59d2368506.pdf","pdftime":"2017-12-01 15:12:10"}
+调用时间：2017-12-01 15:12:10
+[ 2017-12-01T15:12:10+08:00 ] 180.173.43.2 /index.php/Api/Index/index/token/9164152B7EB0AF6EA589B1BE06073304.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `yzs_kjzx_ckey` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzs_kjzx_ckey` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_tofindzx` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='229' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `yzs_tofindzx` SET `pdfurl`='http://apitest.kcway.net/image/upload/20171201/dc0e3d42446742f497f2eb59d2368506.pdf',`pdfname`='dc0e3d42446742f497f2eb59d2368506.pdf',`pdftime`='2017-12-01 15:12:10',`errmsg`='查询成功',`ly`='查询成功',`state`='查询成功',`up_time`='1512112330' WHERE ( orderNo='229' ) [ RunTime:0.0132s ]
+SQL: SELECT * FROM `yzs_tofindzx` WHERE ( orderNo='229' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzs_apply_for_authorisation` [ RunTime:0.0005s ]
+SQL: UPDATE `yzs_apply_for_authorisation` SET `state`='3' WHERE ( acode='54668567867' ) [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000446s ]
+

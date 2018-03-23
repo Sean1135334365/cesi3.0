@@ -1,0 +1,55 @@
+<include file="Public:header" />
+
+<form class="form-inline definewidth m20" action="index.html" method="get">
+  &nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增菜单</button>
+</form>
+
+
+<table class="table table-bordered table-hover definewidth m10">
+  <tr>
+    <td>分类</td>
+    <td>名称</td>
+    <td>类型</td>
+    <td>URL</td>
+    <td>操作</td>
+  </tr>
+  <volist name="menu" id="vo">
+    <tr>
+      <td style="font-weight:bold;">一级菜单</td>
+      <td style="font-weight:bold;"><{$vo.name}></td>
+      <td style="font-weight:bold;"><{$vo.type}></td>
+      <td style="font-weight:bold;"><{$vo.url}></td>
+      <td><span>修改</span> | <span>删除</span></td>
+    </tr>
+    <tr>
+    <td rowspan="5" align="center" valign="middle">二级菜单</td>
+    </tr>
+    <volist name="vo['sub_button']" id="sub">
+      <tr>
+        <td><{$sub.name}></td>
+        <td>
+          <if condition="$sub['type'] eq 'click'">点击推事件</if>
+          <if condition="$sub['type'] eq 'view'">跳转URL</if>
+          <if condition="$sub['type'] eq 'scancode_push'">扫码推事件</if>
+          <if condition="$sub['type'] eq 'scancode_waitmsg'">扫码推事件且弹出“消息接收中”提示框</if>
+          <if condition="$sub['type'] eq 'pic_sysphoto'">弹出系统拍照发图</if>
+          <if condition="$sub['type'] eq 'pic_photo_or_album'">弹出拍照或者相册发图</if>
+          <if condition="$sub['type'] eq 'pic_weixin'">弹出微信相册发图器</if>
+          <if condition="$sub['type'] eq 'location_select'">弹出地理位置选择器</if>
+          <if condition="$sub['type'] eq 'media_id'">下发消息（除文本消息）</if>
+          <if condition="$sub['type'] eq 'view_limited'">跳转图文消息URL</if>
+        </td>
+        <td><{$sub.url}></td>
+        <td>
+          <a href="<{:U('System/admin_grouping',array('id'=>$vo['id']))}>">修改</a> <span style="font-size:16px;"> | </span>
+          <a href="<{:U('System/delete_admin',array('id'=>$vo['id']))}>" onclick="return menu_delete('<{$vo.delete}>','<{$vo.menu}>')">删除</a>
+        </td>
+      </tr>
+    </volist>
+  </volist>
+</table>
+
+
+
+
+<include file="Public:footer" />

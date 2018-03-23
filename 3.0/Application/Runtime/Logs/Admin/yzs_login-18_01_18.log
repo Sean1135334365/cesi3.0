@@ -1,0 +1,1181 @@
+[ 2018-01-18T18:25:44+08:00 ] 127.0.0.1 /index.php/Admin/Order2/apply_update/id/218.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+SQL: select
+                    i.id,
+                    i.name,
+                    i.amount,
+                    i.warehouse_warrant_date,
+                    i.trust_name,
+                    i.contract_number,
+                    i.loanamount,
+                    i.time_number,
+                    i.rate,
+                    i.way,
+                    i.advance,
+                    i.condition,
+                    i.purpose,
+                    i.credit_investigation,
+                    i.judiciary_condition,
+                    i.investigate,
+                    i.responsible_person,
+                    i.investigate_date,
+                    i.principal,
+                    i.principal_date,
+                    i.order_state,
+                    m.borrower,
+                    m.guarantee,
+                    m.photograph,
+                    h.capital,
+                    h.platform,
+                    h.channel,
+                    h.remarks from yzs_indentinfo i
+                    left join yzs_materialinfo m on i.id=m.i_id
+                    left join yzs_handle h on i.id=h.i_id where i.id=218 [ RunTime:0.0009s ]
+NOTIC: [2] Invalid argument supplied for foreach() H:\www\3.0\Application\Admin\Controller\Order2Controller.class.php 第 484 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000295s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined index: identity_card_frontal H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 281 行.
+NOTIC: [8] Undefined index: household_register H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 282 行.
+NOTIC: [8] Undefined index: marriage_certificate H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 283 行.
+NOTIC: [8] Undefined index: credit_report H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 284 行.
+NOTIC: [8] Undefined index: pledge_house H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 285 行.
+NOTIC: [8] Undefined index: bank H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 286 行.
+NOTIC: [8] Undefined index: standby_house H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 287 行.
+NOTIC: [8] Undefined index: see_house_img H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 381 行.
+NOTIC: [8] Undefined index: company H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 382 行.
+NOTIC: [8] Undefined index: court H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 383 行.
+NOTIC: [8] Undefined index: application_form H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 384 行.
+NOTIC: [8] Undefined index: check_table H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 385 行.
+NOTIC: [8] Undefined index: household_register H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 386 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 572 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 585 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 623 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 636 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 674 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 687 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 725 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 738 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 776 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 789 行.
+NOTIC: [8] Array to string conversion H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 897 行.
+NOTIC: [8] Array to string conversion H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 899 行.
+NOTIC: [8] Use of undefined constant File - assumed 'File' H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+NOTIC: [8] Use of undefined constant img_file - assumed 'img_file' H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+NOTIC: [2] Division by zero H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.567682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.567719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2018-01-18T18:28:52+08:00 ] 127.0.0.1 /index.php/Admin/Order2/apply_update/id/218.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: select
+                    i.id,
+                    i.name,
+                    i.amount,
+                    i.warehouse_warrant_date,
+                    i.trust_name,
+                    i.contract_number,
+                    i.loanamount,
+                    i.time_number,
+                    i.rate,
+                    i.way,
+                    i.advance,
+                    i.condition,
+                    i.purpose,
+                    i.credit_investigation,
+                    i.judiciary_condition,
+                    i.investigate,
+                    i.responsible_person,
+                    i.investigate_date,
+                    i.principal,
+                    i.principal_date,
+                    i.order_state,
+                    m.borrower,
+                    m.guarantee,
+                    m.photograph,
+                    h.capital,
+                    h.platform,
+                    h.channel,
+                    h.remarks from yzs_indentinfo i
+                    left join yzs_materialinfo m on i.id=m.i_id
+                    left join yzs_handle h on i.id=h.i_id where i.id=218 [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() H:\www\3.0\Application\Admin\Controller\Order2Controller.class.php 第 484 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined index: identity_card_frontal H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 281 行.
+NOTIC: [8] Undefined index: household_register H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 282 行.
+NOTIC: [8] Undefined index: marriage_certificate H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 283 行.
+NOTIC: [8] Undefined index: credit_report H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 284 行.
+NOTIC: [8] Undefined index: pledge_house H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 285 行.
+NOTIC: [8] Undefined index: bank H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 286 行.
+NOTIC: [8] Undefined index: standby_house H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 287 行.
+NOTIC: [8] Undefined index: see_house_img H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 381 行.
+NOTIC: [8] Undefined index: company H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 382 行.
+NOTIC: [8] Undefined index: court H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 383 行.
+NOTIC: [8] Undefined index: application_form H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 384 行.
+NOTIC: [8] Undefined index: check_table H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 385 行.
+NOTIC: [8] Undefined index: household_register H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 386 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 572 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 585 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 623 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 636 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 674 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 687 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 725 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 738 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 776 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 789 行.
+NOTIC: [8] Array to string conversion H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 897 行.
+NOTIC: [8] Array to string conversion H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 899 行.
+NOTIC: [8] Use of undefined constant File - assumed 'File' H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+NOTIC: [8] Use of undefined constant img_file - assumed 'img_file' H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+NOTIC: [2] Division by zero H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.581711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.581745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2018-01-18T18:29:13+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0085s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Index','index','1','张中','','','1516271353') [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `yzs_catalogue` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `yzs_catalogue` WHERE ( state=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzs_rank_catalogue` [ RunTime:0.0055s ]
+SQL: SELECT `c_id` FROM `yzs_rank_catalogue` WHERE ( r_id='1' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2018-01-18T18:29:13+08:00 ] 127.0.0.1 /index.php/Admin/Order/wx_apply.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0126s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Order','wx_apply','1','张中','','','1516271353') [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `yzs_wx_application` [ RunTime:0.0119s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_wx_application` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Admin\Controller\OrderController.class.php 第 140 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Admin\Controller\OrderController.class.php 第 156 行.
+SQL: select a.id, a.order_number, u.nickname,u.channel_number, a.loanamount, a.number,a.mobile,a.channel, a.p_power_num, a.wx_time, a.wx_state, a.banks from yzs_wx_application a left join yzs_wxusers u on a.uid = u.id where 1 order by a.wx_time desc, a.wx_state asc, a.wx_time desc limit 0,20 [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: img_url H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 198 行.
+NOTIC: [8] Undefined index: code H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 199 行.
+NOTIC: [8] Undefined index: name H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 200 行.
+NOTIC: [8] Undefined index: source H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 201 行.
+NOTIC: [8] Undefined index: ptname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 202 行.
+NOTIC: [8] Undefined index: city H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 203 行.
+NOTIC: [8] Undefined index: min_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 204 行.
+NOTIC: [8] Undefined index: max_money H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 205 行.
+NOTIC: [8] Undefined index: add_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 206 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 207 行.
+NOTIC: [8] Undefined index: enter_time H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 208 行.
+NOTIC: [8] Undefined index: enter_ip H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 209 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 212 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+NOTIC: [8] Undefined index: all_doc_number H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 254 行.
+NOTIC: [8] Undefined index: wxname H:\www\3.0\Application\Runtime\Cache\Admin\26ec279448812fee37817c4a605b4219.php 第 255 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2018-01-18T18:29:13+08:00 ] 127.0.0.1 /index.php/Admin/Order2/apply_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0134s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Order2','apply_list','1','张中','','','1516271353') [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `yzs_indentinfo` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_indentinfo` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_indentinfo` WHERE ( 1 ) ORDER BY i_time desc LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: user H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 72 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2018-01-18T18:29:15+08:00 ] 127.0.0.1 /index.php/Admin/Order2/chack_username.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0092s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Order2','chack_username','1','张中','','{\"id\":\"218\"}','1516271355') [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yzs_materialinfo` [ RunTime:0.0051s ]
+SQL: SELECT `borrower` FROM `yzs_materialinfo` WHERE ( i_id=218 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-01-18T18:29:16+08:00 ] 127.0.0.1 /index.php/Admin/Order2/examine/id/944/i_id/218.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `yzs_investigate` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `yzs_investigate` WHERE ( id=944 ) LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] Invalid argument supplied for foreach() H:\www\3.0\Application\Admin\Controller\Order2Controller.class.php 第 1028 行.
+SQL: SHOW COLUMNS FROM `yzs_materialinfo` [ RunTime:0.0031s ]
+SQL: SELECT `borrower` FROM `yzs_materialinfo` WHERE ( i_id=218 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined index: count_type_list H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 842 行.
+NOTIC: [8] Undefined index: count_type_list H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 844 行.
+NOTIC: [8] Undefined index: count_type_list H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 846 行.
+NOTIC: [8] Undefined index: count_type_list H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 848 行.
+NOTIC: [8] Undefined index: count_type_list H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 853 行.
+NOTIC: [8] Undefined index: count_type_list H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 855 行.
+NOTIC: [8] Undefined index: count_type_list H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 857 行.
+NOTIC: [8] Undefined index: total H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1222 行.
+NOTIC: [8] Undefined index: fst H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1224 行.
+NOTIC: [8] Undefined index: total H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1228 行.
+NOTIC: [8] Undefined index: lst H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1230 行.
+NOTIC: [8] Undefined index: zxgg H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1444 行.
+NOTIC: [8] Undefined index: shixin H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1481 行.
+NOTIC: [8] Undefined index: fygg H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1514 行.
+NOTIC: [8] Undefined index: cpws H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1540 行.
+NOTIC: [8] Undefined index: bgt H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1572 行.
+NOTIC: [8] Undefined index: ktgg H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1608 行.
+NOTIC: [8] Undefined index: ajlc H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1644 行.
+NOTIC: [8] Undefined index: wdhmd H:\www\3.0\Application\Runtime\Cache\Admin\ff43b84ddd44564a162c4b899eaa6b82.php 第 1690 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.740072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.740236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2018-01-18T18:29:24+08:00 ] 127.0.0.1 /index.php/Admin/Order2/apply_update/id/218.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
+SQL: select
+                    i.id,
+                    i.name,
+                    i.amount,
+                    i.warehouse_warrant_date,
+                    i.trust_name,
+                    i.contract_number,
+                    i.loanamount,
+                    i.time_number,
+                    i.rate,
+                    i.way,
+                    i.advance,
+                    i.condition,
+                    i.purpose,
+                    i.credit_investigation,
+                    i.judiciary_condition,
+                    i.investigate,
+                    i.responsible_person,
+                    i.investigate_date,
+                    i.principal,
+                    i.principal_date,
+                    i.order_state,
+                    m.borrower,
+                    m.guarantee,
+                    m.photograph,
+                    h.capital,
+                    h.platform,
+                    h.channel,
+                    h.remarks from yzs_indentinfo i
+                    left join yzs_materialinfo m on i.id=m.i_id
+                    left join yzs_handle h on i.id=h.i_id where i.id=218 [ RunTime:0.0017s ]
+NOTIC: [2] Invalid argument supplied for foreach() H:\www\3.0\Application\Admin\Controller\Order2Controller.class.php 第 484 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000303s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+NOTIC: [8] Undefined index: identity_card_frontal H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 281 行.
+NOTIC: [8] Undefined index: household_register H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 282 行.
+NOTIC: [8] Undefined index: marriage_certificate H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 283 行.
+NOTIC: [8] Undefined index: credit_report H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 284 行.
+NOTIC: [8] Undefined index: pledge_house H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 285 行.
+NOTIC: [8] Undefined index: bank H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 286 行.
+NOTIC: [8] Undefined index: standby_house H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 287 行.
+NOTIC: [8] Undefined index: see_house_img H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 381 行.
+NOTIC: [8] Undefined index: company H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 382 行.
+NOTIC: [8] Undefined index: court H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 383 行.
+NOTIC: [8] Undefined index: application_form H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 384 行.
+NOTIC: [8] Undefined index: check_table H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 385 行.
+NOTIC: [8] Undefined index: household_register H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 386 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 572 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 585 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 623 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 636 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 674 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 687 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 725 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 738 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 776 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 789 行.
+NOTIC: [8] Array to string conversion H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 897 行.
+NOTIC: [8] Array to string conversion H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 899 行.
+NOTIC: [8] Use of undefined constant File - assumed 'File' H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+NOTIC: [8] Use of undefined constant img_file - assumed 'img_file' H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+NOTIC: [2] Division by zero H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.558033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.558068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2018-01-18T18:29:32+08:00 ] 127.0.0.1 /index.php/Admin/Order2/apply_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `yzs_log` [ RunTime:0.0074s ]
+SQL: INSERT INTO `yzs_log` (`ctr`,`act`,`user_id`,`user_name`,`get`,`post`,`time`) VALUES ('Order2','apply_list','1','张中','','','1516271372') [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `yzs_indentinfo` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzs_indentinfo` WHERE ( 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzs_indentinfo` WHERE ( 1 ) ORDER BY i_time desc LIMIT 0,20   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: user H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 72 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant state - assumed 'state' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: delete H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: menu H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 148 行.
+NOTIC: [8] Undefined index: act H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 158 行.
+NOTIC: [8] Undefined index: state H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 173 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 186 行.
+NOTIC: [8] Undefined index: type H:\www\3.0\Application\Runtime\Cache\Admin\4d51dd47f46f25e80b85fd7d839336b0.php 第 190 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2018-01-18T18:29:34+08:00 ] 127.0.0.1 /index.php/Admin/Order2/apply_update/id/218.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: select
+                    i.id,
+                    i.name,
+                    i.amount,
+                    i.warehouse_warrant_date,
+                    i.trust_name,
+                    i.contract_number,
+                    i.loanamount,
+                    i.time_number,
+                    i.rate,
+                    i.way,
+                    i.advance,
+                    i.condition,
+                    i.purpose,
+                    i.credit_investigation,
+                    i.judiciary_condition,
+                    i.investigate,
+                    i.responsible_person,
+                    i.investigate_date,
+                    i.principal,
+                    i.principal_date,
+                    i.order_state,
+                    m.borrower,
+                    m.guarantee,
+                    m.photograph,
+                    h.capital,
+                    h.platform,
+                    h.channel,
+                    h.remarks from yzs_indentinfo i
+                    left join yzs_materialinfo m on i.id=m.i_id
+                    left join yzs_handle h on i.id=h.i_id where i.id=218 [ RunTime:0.0009s ]
+NOTIC: [2] Invalid argument supplied for foreach() H:\www\3.0\Application\Admin\Controller\Order2Controller.class.php 第 484 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: identity_card_frontal H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 281 行.
+NOTIC: [8] Undefined index: household_register H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 282 行.
+NOTIC: [8] Undefined index: marriage_certificate H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 283 行.
+NOTIC: [8] Undefined index: credit_report H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 284 行.
+NOTIC: [8] Undefined index: pledge_house H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 285 行.
+NOTIC: [8] Undefined index: bank H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 286 行.
+NOTIC: [8] Undefined index: standby_house H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 287 行.
+NOTIC: [8] Undefined index: see_house_img H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 381 行.
+NOTIC: [8] Undefined index: company H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 382 行.
+NOTIC: [8] Undefined index: court H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 383 行.
+NOTIC: [8] Undefined index: application_form H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 384 行.
+NOTIC: [8] Undefined index: check_table H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 385 行.
+NOTIC: [8] Undefined index: household_register H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 386 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 572 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 585 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 623 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 636 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 674 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 687 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 725 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 738 行.
+NOTIC: [8] Undefined index: occupation_rest H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 776 行.
+NOTIC: [8] Undefined index: improper_loan H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 789 行.
+NOTIC: [8] Array to string conversion H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 897 行.
+NOTIC: [8] Array to string conversion H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 899 行.
+NOTIC: [8] Use of undefined constant File - assumed 'File' H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+NOTIC: [8] Use of undefined constant img_file - assumed 'img_file' H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+NOTIC: [2] Division by zero H:\www\3.0\Application\Runtime\Cache\Admin\c7d7479b8c23324b6bac67ef645ab8bc.php 第 967 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.522692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.522727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+

@@ -1,0 +1,255 @@
+<include file="Public:header" />
+
+
+    <link rel="stylesheet" href="__PUBLIC__/Weixin/css/reset.css">
+    <link rel="stylesheet" href="__PUBLIC__/Weixin/css/pro_i.css?<php>echo rand(10000,99999);</php>" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Weixin/css/swiper-3.4.2.min.css" type="text/css">
+	<header>
+		<h3><{$data['name']}><span>· <{$data['trait']}></span></h3>
+		<hr>
+
+		<div>
+			<img src="__PUBLIC__<{$data['img_url']}>" alt="">
+			<p class="yl">月利率&#12288;<span class="yl2">
+                <if condition="$is_auth eq 1 "><{$data['admin_showcasing']}>%</if>
+                <if condition="$is_auth eq 0 "><{$data['showcasing']}>%</if>
+                <!--<{$data['min_interest']}>%-<{$data['max_interest']}>%-->
+            </span></p>
+			<p class="yl3"><{$data['min_money']}>万~<{$data['max_money']}>万&nbsp;<span>丨</span>&nbsp;最高<{$data['max_percentage']}>成&nbsp;</p>
+		</div>
+		<div class="line"></div>
+	</header>
+	<div id="content">
+		<img src="__PUBLIC__/Weixin/images/ico/wor.png" alt="">
+		<h3>&#12288;贷款流程</h3>
+		<div class="outer"><div class="inner">
+            <volist name="obj" id="vo">
+            <if condition="$i neq 1">
+                <div class="shortcut"></div>
+            </if>
+			<p>
+				<span><{$i}></span><br><br>
+				<{$vo}>
+			</p>
+            </volist>
+		</div>
+		<p id="mask">
+			<img src="__PUBLIC__/Weixin/images/ico/Rectangle-left.png" alt="">
+			<img src="__PUBLIC__/Weixin/images/ico/Rectangle-right.png" alt="">
+		</p>
+	</div>	
+
+	</div>
+	<div class="line"></div>
+	<div class="short">
+		<ul>
+			<li>产品介绍</li>
+			<li>申请条件</li>
+			<li>资费信息</li>
+		</ul>
+	</div>
+	<div id="shade">
+		<img src="__PUBLIC__/Weixin/images/ico/shadow.png" alt="">
+	</div>
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            	<div class="short_content">
+					<div class="toggle">
+						<p>房产类型</p>
+                        <span>
+                            <!-- <volist name="best" id="vo">
+                                <{$vo.house}>&#12288;
+							</volist> -->
+							<{$best}>
+						</span>
+						
+						<hr>
+					</div>
+					<div class="toggle">
+						<p>贷款金额</p><span><{$data['min_money']}>万-<{$data['max_money']}>万</span><hr>
+						<span></span>
+					</div>
+					<div class="toggle">
+						<p>贷款利率</p>
+                        <span style="color:#dd132b;">
+                            <if condition="$is_auth eq 1 "><{$data['admin_showcasing']}>%</if>
+                            <if condition="$is_auth eq 0 "><{$data['showcasing']}>%</if>
+                            <!--<{$data['min_interest']}>%-<{$data['max_interest']}>%-->
+                        </span><hr>
+						<span></span>
+					</div>
+					<div class="toggle">
+						<p>贷款期限</p>
+                        <span>
+							 <{$month}>
+													<!--<?php  var_dump($month);  ?>
+                           <volist name="month" id="vo">
+                                <if condition="$i neq 1">&nbsp;/&nbsp;</if><{$vo}>
+                            </volist>-->
+                            <!--个月-->
+                        </span>
+                        <hr>
+						<span></span>
+					</div>
+					<div class="toggle">
+						<p>抵押成数</p>
+                        <span>
+                        最高<span style="color:#dd132b;font-size:18px;padding:0 0.4rem;"><{$data['max_percentage']}></span>成
+                        <!--详情见扩展页--></span>
+                        <!--<img src="__PUBLIC__/Weixin/images/ico/shou.png" alt="">--><hr>
+						<!--<span class="con"><{$data['max_percentage']}></span>-->
+					</div>
+				</div>
+			</div>
+            <div class="swiper-slide">
+            	<div class="short_content">
+                    <if condition="$count_type gt 3">
+                        <div class="toggle down">
+                            <p>抵押类型</p>
+                            <span></span><img src="__PUBLIC__/Weixin/images/ico/shou.png" alt=""><hr>
+                        <span class="con">
+                            <volist name="impawn_type" id="vo">
+                                <if condition="$i neq 1">&nbsp;、&nbsp;</if>
+                                <if condition="$vo eq '0'">不限</if>
+                                <if condition="$vo eq '1'">一抵</if>
+                                <if condition="$vo eq '2'">二抵</if>
+                                <if condition="$vo eq '3'">转单</if>
+                                <if condition="$vo eq '4'">C一抵</if>
+                                <if condition="$vo eq '5'">C二抵 </if>
+                            </volist>
+                        </span>
+                        </div>
+                    </if>
+                    <if condition="$count_type lt 4">
+                        <div class="toggle">
+                            <p>抵押类型</p>
+                        <span>
+                            <volist name="impawn_type" id="vo">
+                                <if condition="$i neq 1">&nbsp;、&nbsp;</if>
+                                <if condition="$vo eq '0'">不限</if>
+                                <if condition="$vo eq '1'">一抵</if>
+                                <if condition="$vo eq '2'">二抵</if>
+                                <if condition="$vo eq '3'">转单</if>
+                                <if condition="$vo eq '4'">C一抵</if>
+                                <if condition="$vo eq '5'">C二抵 </if>
+                            </volist>
+                        </span>
+                            <hr>
+                            <span></span>
+                        </div>
+                    </if>
+
+					<div class="toggle">
+                        <p>房产区域</p>
+                        <span>
+                            <{$ter}>
+                        </span>
+                        <hr>
+
+						<!--<p>房产区域</p><span>全上海(崇明除外)</span><hr>-->
+						<!--<span></span>-->
+					</div>
+					<div class="toggle">
+						<p>房产要求</p><span><{$data['house_demand']}></span><hr>
+						<span></span>
+					</div>
+					<div class="toggle <if condition="$data['credit_request'] neq ''">down</if>">
+						<p>征信要求</p><span></span><if condition="$data['credit_request'] neq ''"><img src="__PUBLIC__/Weixin/images/ico/shou.png" alt=""></if><hr>
+						<span class="con"><{$data['credit_request']}></span>
+					</div>
+					<div class="toggle">
+						<p>手续材料</p><span><{$data['materials']}></span><hr>
+						<span></span>
+					</div>	
+				</div>
+			</div>
+            <div class="swiper-slide">
+            	<div class="short_content">
+                    <if condition="$str_len gt 45">
+                        <div class="toggle down">
+                            <p>放款方式</p>
+                            <span></span><img src="__PUBLIC__/Weixin/images/ico/shou.png" alt=""><hr>
+                            <span class="con"><{$data['loan_pattern']}></span>
+                        </div>
+                    </if>
+                    <if condition="$str_len lt 46">
+                        <div class="toggle">
+                            <p>放款方式</p><span><{$data['loan_pattern']}></span><!--<img src="__PUBLIC__/Weixin/images/ico/shou.png" alt="">--><hr>
+                            <span class="con"></span>
+                        </div>
+                    </if>
+					<div class="toggle down">
+						<p>各项费用</p><span></span><img src="__PUBLIC__/Weixin/images/ico/shou.png" alt=""><hr>
+						<span class="con" style="text-indent:0px;width:78%;padding-left:18%;">
+                            <volist name="cost" id="vo">
+                                <{$i}>.&nbsp;<{$vo}><br/>
+                            </volist>
+                        </span>
+					</div>
+					<div class="toggle <if condition="!empty($data['interpretation'])">down</if>">
+						<p>备&#12288;&#12288;注</p><span class="kz"><if condition="!empty($data['interpretation'])"><else/></if></span>
+                    <if condition="!empty($data['interpretation'])"><img src="__PUBLIC__/Weixin/images/ico/shou.png" alt=""></if><hr>
+						<span class="con"><{$data['interpretation']}></span>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+<{$id}>
+		
+	<footer>
+		<button class="short">立即申请</button>
+	</footer>
+
+<script src="__PUBLIC__/Weixin/js/swiper-3.4.2.min.js"></script>
+<script>
+	function resetPage(){  //移动端适配;
+		var deviceWidth = document.documentElement.clientWidth;
+		var scale = deviceWidth/640;
+		if( deviceWidth>=640 ){
+            document.documentElement.style.fontSize="100px";
+		}else{
+            document.documentElement.style.fontSize=25.6*scale+"px";
+		};	
+	};
+	window.onload = function (){
+		sign();
+		resetPage();
+		resetposition();
+	};
+	window.onresize = function (){
+		sign();
+		resetPage();
+		resetposition();
+	};
+	function resetposition(){
+		var oy=parseFloat($('header').css('height'))+parseFloat($('#content').css('height'))+parseFloat($('.line').css('height'));
+		$('.swiper-container').css('top',oy+'px');
+	};
+	function sign(){
+		for(var i=0;i<$('.swiper-pagination-bullet').length;i++){
+			$('.swiper-pagination-bullet').eq(i).attr('index',i);
+		}
+	}
+	var swiper = new Swiper('.swiper-container',{pagination : '.swiper-pagination',paginationElement : 'li',paginationClickable :true,
+		onTouchEnd:function(swiper){
+			setTimeout(function(){
+				var index=$('.swiper-pagination').find('.swiper-pagination-bullet-active').attr('index');
+				$('.short li').css({'color':'#333','border-color':'#eee'});
+				$('.short li').eq(index).css({'color':'#CDAF7D','border-color':'#CDAF7D'});
+			},200)
+				
+		}
+	});
+
+	var url_step="<{:U('Apply/product_step',array('id'=>$data['id']))}>";
+	var info_url="<{:U('Apiwechat/productinfo',array('id'=>$id))}>"
+
+</script>
+<script src="__PUBLIC__/Weixin/js/pro_i.js?<php>echo rand(10000,99999);</php>"></script>
+
+
+
+<include file="Public:footer" />

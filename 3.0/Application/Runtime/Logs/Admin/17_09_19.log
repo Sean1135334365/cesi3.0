@@ -1,0 +1,577 @@
+[ 2017-09-19T11:51:30+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+
+[ 2017-09-19T11:51:30+08:00 ] 127.0.0.1 /index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2017-09-19T11:51:30+08:00 ] 127.0.0.1 /index.php/Admin/Login/img_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2017-09-19T11:51:35+08:00 ] 127.0.0.1 /index.php/Admin/Login/check_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `admin_users` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `admin_users` WHERE ( username='will' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `admin_users` SET `enter_time`='1505793095',`enter_ip`='127.0.0.1' WHERE ( id=3 ) [ RunTime:0.0145s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001204s ]
+
+[ 2017-09-19T11:51:37+08:00 ] 127.0.0.1 /index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `catalogue` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `catalogue`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000866s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2017-09-19T11:51:37+08:00 ] 127.0.0.1 /index.php/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000906s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+SQL: SHOW COLUMNS FROM `catalogue` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `catalogue` ORDER BY id  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002811s ]
+
+[ 2017-09-19T11:51:39+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001493s ]
+SQL: SHOW COLUMNS FROM `admin_users` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `admin_users`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2017-09-19T11:51:41+08:00 ] 127.0.0.1 /index.php/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `catalogue` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `catalogue` ORDER BY id  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010828s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001191s ]
+
+[ 2017-09-19T11:51:43+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003317s ]
+SQL: SHOW COLUMNS FROM `admin_users` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `admin_users`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2017-09-19T11:51:59+08:00 ] 127.0.0.1 /index.php/Admin/User/users.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `sdb_wxuser` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `sdb_wxuser` WHERE ( is_auth != '1' )  [ RunTime:0.0071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2017-09-19T11:52:01+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `admin_users` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `admin_users`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2017-09-19T11:52:02+08:00 ] 127.0.0.1 /index.php/Admin/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `catalogue` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `catalogue` ORDER BY id  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-09-19T11:52:07+08:00 ] 127.0.0.1 /index.php/Admin/Adminclient/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: list D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\9d98f1221ea016693fac61eb5fdf558d.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001179s ]
+
+[ 2017-09-19T11:52:34+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000814s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002642s ]
+SQL: SHOW COLUMNS FROM `admin_users` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `admin_users`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011083s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2017-09-19T11:52:36+08:00 ] 127.0.0.1 /index.php/Admin/User/users.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `sdb_wxuser` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `sdb_wxuser` WHERE ( is_auth != '1' )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 78 行.
+NOTIC: [8] Undefined index: id D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\cc6dee5cc5f336703631d619a16bafab.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012392s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2017-09-19T11:52:41+08:00 ] 127.0.0.1 /index.php/Admin/System/admin_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `admin_users` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `admin_users`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: delete D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+NOTIC: [8] Undefined index: menu D:\WillProject\thinkPHP\Application\Runtime\Cache\Admin\20ad540a2aa8b40fd265df5c9fff6957.php 第 76 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+

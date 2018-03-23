@@ -1,0 +1,143 @@
+<ul>
+    <li>
+        <volist name="type" id="vo">
+            <div class="li_title" style="margin: 0px -12px 20px -12px;text-align:center;" text-align=""><{$vo.name}>
+                <div style="float: right;" class="boot_1">
+                    <!--<if condition="$vo.forbidden eq 1"><a href="javascript:;" class="boot_up">已启用</a>
+                        <elseif condition="$vo.forbidden eq 0"/><a href="javascript:;" class="boot_up">已禁用</a>
+                    </if>-->
+                    <if condition="$vo.forbidden eq 1"><button type="button" class="btn btn-success"> 已启用 </button>
+                        <else/><button type="button" class="btn btn-success"> 已禁用 </button>
+                    </if>
+                </div>
+                <input type="hidden" value="<{$vo.forbidden}>"/>
+                <input type="hidden" value="<{$vo.id}>"/>
+
+            </div>
+        </volist>
+        <table class="table table-bordered table-hover tab_center definewidth m10">
+            <tr>
+                <th>编号</th>
+                <th>名称</th>
+                <!--<th>编辑</th>-->
+                <th>禁用</th>
+            </tr>
+            <volist name="t_data" id="vo">
+                <tr>
+                    <td><{$i}></td>
+                    <td><{$vo.name}></td>
+                    <!--<td>
+                        <a href="javascript:;" class="city_save" dj="<{$vo.grade}>" yiji="<{$vo.id}>">编辑</a>
+                        <input type="hidden" value="<{$vo.id}>"/>
+                    </td>-->
+                    <td style="cursor:pointer;">
+                        <div class="booo_2">
+                            <if condition="$vo.forbidden eq 1"><a href="javascript:;" >已启用</a>
+                                <else /><a href="javascript:;">已禁用</a>
+                            </if>
+                        </div>
+                        <input type="hidden" value="<{$vo.forbidden}>"/>
+                        <input type="hidden" value="<{$vo.id}>"/>
+                    </td>
+                </tr>
+            </volist>
+
+        </table>
+        <div class="inline page"><!-- pull-right-->
+            <if condition="$t_page_number['page'] eq 1 "><a href="javascript:;">«</a></if>
+            <if condition="$t_page_number['page'] neq 1 "><a href="javascript:;" class="ajax_page" page="<{$t_page_number['page']-1}>" s_id="<{$id}>" dj="1">«</a></if>
+            <!--<a href="<if condition="$t_page_number['page'] eq 1 ">javascript:;<else /><{:U('Product/area_list_page',array('page'=>$t_page_number['page']-1,'id'=>$id,'dj'=>'1'))}></if>">«</a>-->
+            <if condition="($t_page_number['count'] gt 10) AND ($t_page_number['page'] gt 3) ">
+                <a href="javascript:;">...</a>
+            </if>
+            <for start="1" end="$t_page_number['count']" comparison="elt">
+                <if condition="($i gt $t_page_number['page'] - 3) AND (($i lt $t_page_number['page'] + 3) OR (($t_page_number['page'] elt 3) AND ($i elt 10)))">
+                    <if condition="$i eq $t_page_number['page'] ">
+                        <a href="javascript:;" class="current"><{$i}></a>
+                        <else />
+                        <a href="javascript:;" class="ajax_page" page="<{$i}>" s_id="<{$id}>" dj="1"><{$i}></a>
+                        <!--<a href="<{:U('Product/area_list_page',array('page'=>$i,'id'=>$id,'dj'=>'1'))}>"><{$i}></a>-->
+                        <!--<li class="page"><a href="<{:U('System/catalog_list',array('page'=>$i))}>"><{$i}></a></li>-->
+                    </if>
+                    <else />
+                </if>
+            </for>
+            <if condition="($t_page_number['count'] gt 6) AND ($t_page_number['page'] elt $t_page_number['count'] - 3) ">
+                <a href="javascript:;">...</a>
+            </if>
+            <if condition="$t_page_number['page'] eq $t_page_number['count'] "><a href="javascript:;">»</a></if>
+            <if condition="$t_page_number['page'] lt $t_page_number['count'] "><a href="javascript:;" class="ajax_page" page="<{$t_page_number['page']+1}>" s_id="<{$id}>" dj="1">»</a></if>
+
+            <!--<a href="<if condition="$t_page_number['page'] eq $t_page_number['count'] ">javascript:;<else /><{:U('Product/area_list_page',array('page'=>$t_page_number['page']+1,'id'=>$id,'dj'=>'1'))}></if>">»</a>-->
+        </div>
+
+        <script>
+            $(function(){
+
+                $('.booo_2').click(function(){
+                    var b1 = $(this);
+                    var forbidden = $(this).next().val();
+                    var id = $(this).next().next().val();
+                    $.post("<{:U('Admin/Product/boot_up')}>",{forbidden:forbidden,id:id},function(res){
+                        if(res['status']==1){
+                            if(res['forbidden'] == 1){
+                                b1.children().text('已启用');
+                            }else{
+                                b1.children().text('已禁用');
+                            }
+                            layer.msg(res['info']);
+                        }else{
+                            layer.msg(res['info']);
+                        }
+                    },'json');
+                })
+
+                $('.city_save').click(function(){
+        //            var id = $(this).next().val();
+                    var dj = $(this).attr('dj');
+                    var yiji = $(this).attr('yiji');
+                    $.post("<{:U('Admin/Product/area_list_page2')}>",{id:yiji,dj:dj},function(res){
+                        $("#dj2").html(res);
+                    });
+                })
+
+/*全禁止*/
+                $('.boot_1').click(function(){
+                    var b1 = $(this);
+                    var forbidden = $(this).next().val();
+                    var id = $(this).next().next().val();
+                    $.post("<{:U('Admin/Product/all_boot_up')}>",{forbidden:forbidden,id:id},function(res){
+                        if(res['status']==1){
+                            if(res['forbidden'] == 1){
+                                b1.children().text('已启用');
+                            }else{
+                                b1.children().text('已禁用');
+                                $('.booo_2').children().text('已禁用');
+                            }
+                            layer.msg(res['info']);
+                        }else{
+                            layer.msg(res['info']);
+                        }
+                    },'json');
+                })
+                $('.ajax_page').click(function(){
+                    var page = $(this).attr('page');
+                    var dj = $(this).attr('dj');
+                    var s_id = $(this).attr('s_id');
+        //            alert(page);
+        //            alert(dj);
+        //            alert(s_id);
+                    $.post("<{:U('Admin/Product/area_list_page')}>",{page:page,dj:dj,id:s_id},function(res){
+                        $("#dj1").html(res);
+                    });
+                });
+            })
+        </script>
+        <!--<script>-->
+            <!--$(function(){-->
+                <!---->
+            <!--})-->
+        <!--</script>-->
+
+    </li>
+</ul>

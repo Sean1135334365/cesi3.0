@@ -1,0 +1,175 @@
+<include file="Public:header" />
+
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/Css/admin_style.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/diyUpload/css/webuploader.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/diyUpload/css/diyUpload.css">
+<script type="text/javascript" src="__PUBLIC__/js/diyUpload/js/webuploader.html5only.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/diyUpload/js/diyUpload.js"></script>
+
+
+<form action="<{:U('Product/introduce_up')}>" method="post" class="definewidth m20">
+  <input type="hidden" name="id" value="<{$data.id}>">
+  <table class="table table-bordered table-hover ">
+    <tr>
+      <td width="12%" class="tableleft">产品名称</td>
+      <td><{$data.name}></td>
+    </tr>
+    <tr>
+      <td class="tableleft">放款方式</td>
+      <td ><{$data.loan_pattern}></td>
+    </tr>
+    <if condition="$data['source'] neq ''">
+      <tr>
+        <td class="tableleft"><{$data.source}></td>
+        <td >
+          <if condition="$data['source_logurl'] neq ''">
+            <img class="show_img" src="__PUBLIC__<{$data.source_logurl}>"/>
+            <input type='hidden' name='source_logurl' value="<{$data.source_logurl}>">
+          </if>
+
+            <div id="box" >
+                <div id="test" ></div>
+
+            </div>
+        </td>
+      </tr>
+    </if>
+    <tr>
+      <td class="tableleft">类&nbsp;&nbsp;&nbsp;&nbsp;型</td>
+      <td >
+        <if condition="$data['banks'] eq '1'">银行类</if>
+        <if condition="$data['banks'] eq '0'">非银类</if>
+      </td>
+    </tr>
+    <tr>
+      <td class="tableleft">介绍图片</td>
+      <td >
+        <if condition="$data['introduce_img'] neq ''">
+          <img class="show_img1" src="__PUBLIC__<{$data.introduce_img}>"/>
+          <input type='hidden' name='source_logurl' value="<{$data.introduce_img}>">
+        </if>
+          <div id="box1" >
+              <div id="test1" ></div>
+
+          </div>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td class="tableleft"></td>
+      <td>
+        <button type="submit" class="btn btn-primary">保存修改</button> &nbsp;&nbsp;<button type="button" class="btn btn-success" name="backid" id="backid">返回列表</button>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+<script>
+  $(function(){
+      var show_img=document.getElementsByClassName("show_img")[0];
+      var show_img1=document.getElementsByClassName("show_img1")[0];
+      //底部图片初始化
+      if(show_img){
+          $(".show_img").hide();
+          var img_url=$(".show_img").attr("src");
+          var div = '<div class="parentFileBox" style="width: 130px"> \
+						<ul class="fileBoxUl">\
+						<li id="fileBox" class="diyUploadHover"> \
+                            <div class="viewThumb"><img src="'+img_url+'"></div>\
+                             </li>\
+                            </ul>\
+					</div>';
+
+          $("#box").prepend(div);
+
+          $("#test").find(".webuploader-pick").html('' +
+              '<div style="border:solid 1px #84d0ff">' +
+              '<a class="diyInstead" href="javascript:void(0)">替&nbsp;换</a></div>')
+          $("#test").find(".webuploader-pick").css({
+              "text-align":"center",
+              "line-height":"40px",
+              "width":"60px",
+              "height":"40px",
+          })
+
+
+
+      }else{
+          $("#test").show();
+      }
+      if(show_img1){
+          $(".show_img1").hide();
+          var img_url1=$(".show_img1").attr("src");
+          var div1 = '<div class="parentFileBox" style="width: 130px"> \
+						<ul class="fileBoxUl">\
+						<li id="fileBox" class="diyUploadHover"> \
+                            <div class="viewThumb"><img src="'+img_url1+'"></div>\
+                             </li>\
+                            </ul>\
+					</div>';
+
+          $("#box1").prepend(div1);
+
+          $("#test1").find(".webuploader-pick").html('' +
+              '<div style="border:solid 1px #84d0ff">' +
+              '<a class="diyInstead" href="javascript:void(0)">替&nbsp;换</a></div>')
+          $("#test1").find(".webuploader-pick").css({
+              "text-align":"center",
+              "line-height":"40px",
+              "width":"60px",
+              "height":"40px",
+          })
+      }else{
+          $("#test1").show();
+      }
+
+
+
+
+  });
+
+
+  $('#test').diyUpload({
+      url:'<{:U("File/img_file",array("type"=>"source_logurl"))}>',
+      addimg:"__PUBLIC__",//设置添加按钮图片根目录
+      success:function( data ) {
+
+          if(data.status === 1){
+
+              var url = data.result.src;
+
+              var ipt = "<input type='hidden' name='source_logurl' value='"+url+"'>";
+
+              $('#box').before(ipt);
+          }else{
+          }
+      }
+  });
+  $('#test1').diyUpload({
+      url:'<{:U("File/img_file",array("type"=>"introduce_img"))}>',
+      addimg:"__PUBLIC__",//设置添加按钮图片根目录
+      success:function( data ) {
+
+          if(data.status === 1){
+
+              var url = data.result.src;
+
+              var ipt = "<input type='hidden' name='introduce_img' value='"+url+"'>";
+
+              $('#box1').before(ipt);
+          }else{
+
+          }
+      }
+  });
+</script>
+
+
+
+
+
+<include file="Public:footer" />
